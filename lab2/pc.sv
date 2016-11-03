@@ -13,10 +13,9 @@ module pc (
 	  address <= startAddress;
 	else
     case({branchType})
-     'b00: address <= address + 1;
-	  'b01: address <= address + threeBitOffset;
-	  'b10: address <= address + sixBitOffset; 
-	  default: address <= address + 1;
-	endcase
+     'b00: address <= address + threeBitOffset;
+	  'b01: address <= address + sixBitOffset; 
+	  'b1X: address <= address + 1;
+	 endcase
  
  endmodule

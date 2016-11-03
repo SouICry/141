@@ -14,25 +14,30 @@
 // Revision 0.01 - File Created
 // Additional Comments: 					  $clog2
 
-module regFile (
+module reg_file (
   input         clock,
                 enableWrite,
   input  [ 2:0] registerA,
                 registerB,
                 registerWrite,
   input  [ 7:0] dataIn,
+  input 			 flag,
   output [ 7:0] regA,
-  output [ 7:0] regB
+  output [ 7:0] regB,
+  output logic  flagBit
     );
 
 logic [7:0] registers[8];
 
-assign regA = registerA? registers[registerA] : 0;
-assign regB = registerB? registers[registerB] : 0;
+assign regA = registerA? registers[registerA] : 8'b0;
+assign regB = registerB? registers[registerB] : 8'b0;
 
 // sequential (clocked) writes
 always_ff @ (posedge clock)
-  if (enableWrite && registerWrite)
-    registers[registerWrite] <= dataIn;
+	begin 
+		flagBit <= flag;
+		if (enableWrite)
+			registers[registerWrite] <= dataIn;
+	end 
 
 endmodule
