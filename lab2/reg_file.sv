@@ -14,27 +14,25 @@
 // Revision 0.01 - File Created
 // Additional Comments: 					  $clog2
 
-module reg_file #(parameter W=8, D=3)(
-  input           clk,
-                  write_en,
-  input  [ D-1:0] raddrA,
-                  raddrB,
-                  waddr,
-  input  [ W-1:0] data_in,
-  output [ W-1:0] data_outA,
-  output [ W-1:0] data_outB
+module regFile (
+  input         clock,
+                enableWrite,
+  input  [ 2:0] registerA,
+                registerB,
+                registerWrite,
+  input  [ 7:0] dataIn,
+  output [ 7:0] regA,
+  output [ 7:0] regB
     );
 
-// W bits wide [W-1:0] and 2**3 registers deep or just 8	 
-logic [W-1:0] registers[2**D];
+logic [7:0] registers[8];
 
-// combinational reads w/ blanking of address 0
-assign      data_outA = raddrA? registers[raddrA] : '0;
-assign      data_outB = raddrB? registers[raddrB] : 'b0;
+assign regA = registerA? registers[registerA] : 0;
+assign regB = registerB? registers[registerB] : 0;
 
 // sequential (clocked) writes
-always_ff @ (posedge clk)
-  if (write_en && waddr)
-    registers[waddr] <= data_in;
+always_ff @ (posedge clock)
+  if (enableWrite && registerWrite)
+    registers[registerWrite] <= dataIn;
 
 endmodule
