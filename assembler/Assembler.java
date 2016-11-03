@@ -3,12 +3,12 @@ import java.util.*;
 
 public class Assembler {
   private static HashMap<String, Integer> hashmap = new HashMap<>();
-  private static int pc = 0;
+  private static int pc = 0; // program counter used to calculate branch labels
 
   public static void main(String args[]) {
-    // initialize input
 
     try {
+      // initialize input
       String sourceFile = args[0];
       FileReader fileReader = new FileReader(sourceFile);
       BufferedReader input = new BufferedReader(fileReader);
@@ -18,6 +18,7 @@ public class Assembler {
       FileWriter fileWriter = new FileWriter(destFile);
       BufferedWriter output = new BufferedWriter(fileWriter);
 
+      // read and load labels into hashmaps
       String code = "";
       String line;
       while((line = input.readLine()) != null) {
@@ -32,6 +33,7 @@ public class Assembler {
       
       pc = 0;
 
+      // split the instructions into an array and compile each
       String instructions[] = code.split("\n");
       System.out.println(instructions.length);
       for (int i = 0; i < instructions.length; i++) {
@@ -46,11 +48,13 @@ public class Assembler {
     }
   }
 
+  // compile method that takes a instruction and returns a binary string
   public static String convert(String source) {
-    String binString = "";
+    String binString = ""; // the return binary string
+    // parsing and separating the instructions into arguments
     source = source.toLowerCase();
     String inst[] = source.split(" ");
-    String offset;
+    String offset; // used to calculate branch offset for label
 
     int reg1, reg2, immediate;
     switch (inst[0]) {
@@ -183,6 +187,7 @@ public class Assembler {
     return binString;
   }
 
+  // instruction to convert interger into binary string with a specific width
   public static String toBinString(int data, int width) {
     return String.format("%" + width + "s", Integer.toBinaryString(data)).replace(' ', '0');
   }
