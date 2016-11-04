@@ -1,3 +1,4 @@
-*.qsf
-*.mti
-.mpf
+*
+!.gitignore
+!*.sv
+!*/
