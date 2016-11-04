@@ -25,9 +25,12 @@ module InstROM(
 	 	 
 	 logic [8:0] mem [127:0];
 	 
+	 initial 
+        $readmemh("instructions.list", mem);
+		  
 	 assign InstOut = mem[InstAddress];
 	 
-	 initial 
-        $readmemh("dataram_init.list", mem);
+	 
+	 
 		  
 endmodule

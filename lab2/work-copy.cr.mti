@@ -5,6 +5,13 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	reg_file
 
+} {} {}} /home/kevin/141/lab2/pc_test.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/pc_test.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module pc_test
+
+Top level modules:
+	pc_test
+
 } {} {}} /home/kevin/141/lab2/alu.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/alu.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling package alu_sv_unit
@@ -21,6 +28,13 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	pc
 
+} {} {}} /home/kevin/141/lab2/InstROM.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/InstROM.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
+
 } {} {}} /home/kevin/141/lab2/test.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/test.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling package test_sv_unit
@@ -29,13 +43,6 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 
 Top level modules:
 	test
-
-} {} {}} /home/kevin/141/lab2/InstROM.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/InstROM.sv
-Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module InstROM
-
-Top level modules:
-	InstROM
 
 } {} {}} /home/kevin/141/lab2/definitions.sv {1 {vlog -work work -sv -stats=none /home/kevin/141/lab2/definitions.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014

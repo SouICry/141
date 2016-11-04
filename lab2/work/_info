@@ -10,7 +10,7 @@ cModel Technology
 d/home/kevin/altera/15.0/modelsim_ase/linuxaloem
 vadder
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z1 !s110 1478233184
+Z1 !s110 1478238850
 !i10b 1
 !s100 L@5Fnd:nS:I>D]a5hK6Aa1
 ICz06_z>O2>=P6zk`RzJjF1
@@ -26,7 +26,7 @@ Z4 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1478233184.834487
+!s108 1478238850.432960
 !s107 /home/kevin/141/lab2/adder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/adder.sv|
 !i113 1
@@ -50,7 +50,7 @@ Z8 8/home/kevin/141/lab2/alu.sv
 Z9 F/home/kevin/141/lab2/alu.sv
 L0 2
 R4
-Z10 !s108 1478233184.891167
+Z10 !s108 1478238850.483306
 Z11 !s107 /home/kevin/141/lab2/alu.sv|
 Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/alu.sv|
 !i113 1
@@ -88,7 +88,7 @@ R2
 !s105 CPU_sv_unit
 S1
 R3
-Z13 w1478227213
+w1478227213
 8/home/kevin/141/lab2/CPU.sv
 F/home/kevin/141/lab2/CPU.sv
 L0 1
@@ -96,7 +96,7 @@ R4
 r1
 !s85 0
 31
-!s108 1478233184.933859
+!s108 1478238850.533589
 !s107 /home/kevin/141/lab2/CPU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/CPU.sv|
 !i113 1
@@ -119,46 +119,70 @@ R4
 r1
 !s85 0
 31
-!s108 1478233184.967019
+!s108 1478238850.567803
 !s107 /home/kevin/141/lab2/definitions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/definitions.sv|
 !i113 1
 R5
 vInstROM
 R0
-Z14 !s110 1478233185
+R1
 !i10b 1
-!s100 3KT5?goAYcjALoL>@2Mh_3
-I6g=HLSPY=fZAf>?20Mb080
+!s100 Wm`R0e_F;RZI_M`1;OIPe3
+InR7Y2gPeX;]4YJQ?2hk:J1
 R2
 !s105 InstROM_sv_unit
 S1
 R3
-w1478151789
+w1478238570
 8/home/kevin/141/lab2/InstROM.sv
 F/home/kevin/141/lab2/InstROM.sv
-Z15 L0 22
+Z13 L0 22
 R4
 r1
 !s85 0
 31
-!s108 1478233185.002494
+!s108 1478238850.599496
 !s107 /home/kevin/141/lab2/InstROM.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/InstROM.sv|
 !i113 1
 R5
 n@inst@r@o@m
+vInstROM_test
+R0
+R1
+!i10b 1
+!s100 3M]CiDJmJh79A^WjOD3O_3
+IeZ8T2RgS1KZYbLB;RBXg13
+R2
+!s105 InstROM_test_sv_unit
+S1
+R3
+w1478238392
+8/home/kevin/141/lab2/InstROM_test.sv
+F/home/kevin/141/lab2/InstROM_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1478238850.794600
+!s107 /home/kevin/141/lab2/InstROM_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/InstROM_test.sv|
+!i113 1
+R5
+n@inst@r@o@m_test
 vpc
 R0
-R14
+R1
 !i10b 1
-!s100 M2hXmeFJCOCLcYe6<Ea303
-IQ]6Y?8Nn]?iHYgf^MTD7e2
+!s100 6kz8KoofBj7^kAfI_B52X3
+I?ejQdMcKSOoLSU7zb:k9j2
 R2
 !s105 pc_sv_unit
 S1
 R3
-R13
+w1478237200
 8/home/kevin/141/lab2/pc.sv
 F/home/kevin/141/lab2/pc.sv
 L0 2
@@ -166,14 +190,37 @@ R4
 r1
 !s85 0
 31
-!s108 1478233185.034078
+!s108 1478238850.631202
 !s107 /home/kevin/141/lab2/pc.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/pc.sv|
 !i113 1
 R5
+vpc_test
+R0
+R1
+!i10b 1
+!s100 HBa5?5[_CKG?ej:8XmFeL2
+I7ckSHAl8z1@IB6cPAZbC@0
+R2
+!s105 pc_test_sv_unit
+S1
+R3
+w1478237220
+8/home/kevin/141/lab2/pc_test.sv
+F/home/kevin/141/lab2/pc_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1478238850.762116
+!s107 /home/kevin/141/lab2/pc_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/pc_test.sv|
+!i113 1
+R5
 vreg_file
 R0
-R14
+R1
 !i10b 1
 !s100 1LFL^eM042i:5[69IGciR1
 IFT<^CRlaEDRZBg:jU45DJ1
@@ -189,32 +236,32 @@ R4
 r1
 !s85 0
 31
-!s108 1478233185.066027
+!s108 1478238850.662985
 !s107 /home/kevin/141/lab2/reg_file.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/reg_file.sv|
 !i113 1
 R5
-vreg_file_tb
+vreg_file_test
 R0
-R14
+R1
 !i10b 1
-!s100 fTSo1P4EaAU2_;4cR96GP2
-I>SNld6;zZ]7PRMSg]kULK0
+!s100 mhidRA1^eAP71MI18z>W@2
+IHb[=87oHg;W6^^X;WbG860
 R2
-!s105 reg_file_test_sv_unit
+Z14 !s105 reg_file_test_sv_unit
 S1
 R3
-w1478232913
-8/home/kevin/141/lab2/reg_file_test.sv
-F/home/kevin/141/lab2/reg_file_test.sv
-R15
+w1478233984
+Z15 8/home/kevin/141/lab2/reg_file_test.sv
+Z16 F/home/kevin/141/lab2/reg_file_test.sv
+R13
 R4
 r1
 !s85 0
 31
-!s108 1478233185.135232
-!s107 /home/kevin/141/lab2/reg_file_test.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/reg_file_test.sv|
+!s108 1478238850.729607
+Z17 !s107 /home/kevin/141/lab2/reg_file_test.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/reg_file_test.sv|
 !i113 1
 R5
 vtest
@@ -232,13 +279,13 @@ I6TJBc>KNg7<mmRAhH3n]=0
 S1
 R3
 R7
-Z16 8/home/kevin/141/lab2/test.sv
-Z17 F/home/kevin/141/lab2/test.sv
+Z19 8/home/kevin/141/lab2/test.sv
+Z20 F/home/kevin/141/lab2/test.sv
 L0 3
 R4
-Z18 !s108 1478233185.098935
-Z19 !s107 /home/kevin/141/lab2/test.sv|
-Z20 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/test.sv|
+Z21 !s108 1478238850.695115
+Z22 !s107 /home/kevin/141/lab2/test.sv|
+Z23 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/kevin/141/lab2/test.sv|
 !i113 1
 R5
 Xtest_sv_unit
@@ -255,12 +302,12 @@ ILa6Zb[Qo`3DYniQ@]<@N71
 S1
 R3
 R7
-R16
-R17
-L0 2
-R4
-R18
 R19
 R20
+L0 2
+R4
+R21
+R22
+R23
 !i113 1
 R5

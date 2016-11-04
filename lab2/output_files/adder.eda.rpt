@@ -1,5 +1,5 @@
 EDA Netlist Writer report for adder
-Thu Nov  3 20:08:01 2016
+Thu Nov  3 23:55:22 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov  3 20:08:01 2016 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov  3 23:55:22 2016 ;
 ; Revision Name             ; adder                                 ;
-; Top-level Entity Name     ; reg_file                              ;
+; Top-level Entity Name     ; alu                                   ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Thu Nov  3 20:08:00 2016
+    Info: Processing started: Thu Nov  3 23:55:21 2016
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off adder -c adder
 Info (204019): Generated file adder_6_1200mv_85c_slow.svo in folder "/home/kevin/141/lab2/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file adder_6_1200mv_0c_slow.svo in folder "/home/kevin/141/lab2/simulation/modelsim/" for EDA simulation tool
@@ -100,8 +100,8 @@ Info (204019): Generated file adder_6_1200mv_0c_v_slow.sdo in folder "/home/kevi
 Info (204019): Generated file adder_min_1200mv_0c_v_fast.sdo in folder "/home/kevin/141/lab2/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file adder_v.sdo in folder "/home/kevin/141/lab2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1092 megabytes
-    Info: Processing ended: Thu Nov  3 20:08:01 2016
+    Info: Peak virtual memory: 1093 megabytes
+    Info: Processing ended: Thu Nov  3 23:55:22 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

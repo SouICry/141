@@ -19,7 +19,7 @@
 // 
 ////////////////////////////////////////////////////////
 
-module reg_file_tb;
+module reg_file_test;
 // DUT Input Drivers
 	bit       CLK;	      // bit can be only 0, 1 (no x or z)
    bit       RegWrite;   // bit self-initializes to 0, not x (handy)
@@ -68,9 +68,9 @@ module reg_file_tb;
 	  srcB 		 = 3'b001;
 	  #20ns;
 	  
-	  flag = 0'b1;
+	  flag = 1'b1;
 	  #20ns;
-	  flag = 0'b0;
+	  flag = 1'b0;
 	  #20ns;
 	  
 	  $stop;

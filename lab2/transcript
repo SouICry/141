@@ -524,3 +524,607 @@ run
 # ** Note: $stop    : /home/kevin/141/lab2/reg_file_test.sv(76)
 #    Time: 120 ns  Iteration: 0  Instance: /reg_file_tb
 # Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_test.sv line 76
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv failed with 1 errors.
+# 10 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:50:08 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+vsim work.pc_test
+# vsim 
+# Start time: 21:50:36 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.reg_file
+# ** Warning: (vsim-3017) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Too few port connections. Expected 10, found 7.
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'clk' not found in the connected module (1st connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'reset' not found in the connected module (2nd connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'branchType' not found in the connected module (3rd connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'startAddress' not found in the connected module (4th connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'threeBitOffset' not found in the connected module (5th connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'sixBitOffset' not found in the connected module (6th connection).
+#         Region: /pc_test/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/pc_test.sv(13): Port 'address' not found in the connected module (7th connection).
+#         Region: /pc_test/test
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'enableWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'registerA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'registerB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'registerWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'dataIn'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'flag'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'regA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'regB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/pc_test.sv(13): [TFMPC] - Missing connection for port 'flagBit'.
+# Error loading design
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 21:51:27 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(36)
+#    Time: 100 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 36
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 21:54:56 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(38)
+#    Time: 100 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 38
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 21:57:40 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(37)
+#    Time: 100 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 37
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 21:58:49 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(37)
+#    Time: 100 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 37
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:01:12 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(37)
+#    Time: 100 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 37
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:02:27 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(41)
+#    Time: 140 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 41
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:04:25 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:06:30 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:10:38 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv failed with 1 errors.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv failed with 1 errors.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv failed with 1 errors.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv failed with 1 errors.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:25:26 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.pc_test
+# vsim 
+# Start time: 22:27:19 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# Compile of InstROM_test.sv failed with 1 errors.
+# 11 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# Compile of InstROM_test.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:46:47 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+add wave -position end  sim:/InstROM_test/InstAddress
+add wave -position end  sim:/InstROM_test/InstOut
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 1 of file "dataram_init.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(31)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# Compile of InstROM_test.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:48:51 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 1 of file "instructions.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(31)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# Compile of InstROM_test.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:49:44 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 1 of file "instructions.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:52:54 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 2 of file "instructions.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+run
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:53:37 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 2 of file "instructions.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# Compile of pc_test.sv was successful.
+# Compile of InstROM_test.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:54:15 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 1 of file "instructions.list". (Max is 3.)    : /home/kevin/141/lab2/InstROM.sv(29)
+#    Time: 0 ps  Iteration: 0  Instance: /InstROM_test/test
+vsim work.InstROM_test
+# vsim 
+# Start time: 22:59:15 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+run
+add wave -position end  sim:/InstROM_test/InstAddress
+add wave -position end  sim:/InstROM_test/InstOut
+run
+vsim work.reg_file_test
+# vsim 
+# Start time: 23:11:23 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_test
+# Loading work.reg_file
+add wave -position end  sim:/reg_file_test/CLK
+add wave -position end  sim:/reg_file_test/RegWrite
+add wave -position end  sim:/reg_file_test/flag
+add wave -position end  sim:/reg_file_test/flagBit
+add wave -position end  sim:/reg_file_test/srcA
+add wave -position end  sim:/reg_file_test/srcB
+add wave -position end  sim:/reg_file_test/writeReg
+add wave -position end  sim:/reg_file_test/writeValue
+add wave -position end  sim:/reg_file_test/ReadA
+add wave -position end  sim:/reg_file_test/ReadB
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_test.sv(76)
+#    Time: 120 ns  Iteration: 0  Instance: /reg_file_test
+# Break in Module reg_file_test at /home/kevin/141/lab2/reg_file_test.sv line 76
+vsim work.InstROM_test
+# vsim 
+# Start time: 23:15:47 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.InstROM_test
+# Loading work.InstROM
+add wave -position end  sim:/InstROM_test/InstAddress
+add wave -position end  sim:/InstROM_test/InstOut
+run
+vsim work.pc_test
+# vsim 
+# Start time: 23:21:07 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+vsim work.pc_test
+# vsim 
+# Start time: 23:22:25 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.pc_test
+# Loading work.pc
+add wave -position end  sim:/pc_test/CLK
+add wave -position end  sim:/pc_test/reset
+add wave -position end  sim:/pc_test/branchType
+add wave -position end  sim:/pc_test/startAddress
+add wave -position end  sim:/pc_test/threeBitOffset
+add wave -position end  sim:/pc_test/sixBitOffset
+add wave -position end  sim:/pc_test/address
+run
+# ** Note: $stop    : /home/kevin/141/lab2/pc_test.sv(44)
+#    Time: 160 ns  Iteration: 0  Instance: /pc_test
+# Break in Module pc_test at /home/kevin/141/lab2/pc_test.sv line 44
