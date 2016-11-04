@@ -29,8 +29,8 @@ module reg_file (
 
 logic [7:0] registers[8];
 
-assign regA = registers[registerA];
-assign regB = registers[registerB];
+assign regA = registerA? registers[registerA] : 8'b0;
+assign regB = registerB? registers[registerB] : 8'b0;
 
 // sequential (clocked) writes
 always_ff @ (posedge clock)
