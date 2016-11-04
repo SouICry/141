@@ -41,7 +41,7 @@ logic signed [7:0] B_S;
 	  addu: {flag, out} = A + B;
 	  incrementIfSet: out = A + flagIn;
 	  setNegative: flag = A[7];
-	  LSL1: {flag,out} = (A << 1) & flagIn;
+	  LSL1: {flag,out} = (A << 1) + flagIn;
 	  min: out = A < B ? A : B;
 	  decrementSetZero: 
 		  begin

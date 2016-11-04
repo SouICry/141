@@ -1,5 +1,5 @@
 Fitter report for adder
-Thu Nov 03 17:12:22 2016
+Thu Nov 03 20:18:00 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -63,15 +63,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 03 17:12:22 2016       ;
+; Fitter Status                      ; Successful - Thu Nov 03 20:18:00 2016       ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE30F29C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 103 / 28,848 ( < 1 % )                      ;
-;     Total combinational functions  ; 103 / 28,848 ( < 1 % )                      ;
+; Total logic elements               ; 176 / 28,848 ( < 1 % )                      ;
+;     Total combinational functions  ; 176 / 28,848 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 28,848 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 30 / 533 ( 6 % )                            ;
@@ -149,12 +149,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.14        ;
+; Average used               ; 1.24        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  14.3%      ;
+;     Processor 2            ;  23.8%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -164,14 +164,6 @@ agreement for further details.
 +--------------+-------------------------------+
 ; Pin Name     ; Reason                        ;
 +--------------+-------------------------------+
-; B[0]         ; Incomplete set of assignments ;
-; B[1]         ; Incomplete set of assignments ;
-; B[2]         ; Incomplete set of assignments ;
-; B[3]         ; Incomplete set of assignments ;
-; B[4]         ; Incomplete set of assignments ;
-; B[5]         ; Incomplete set of assignments ;
-; B[6]         ; Incomplete set of assignments ;
-; B[7]         ; Incomplete set of assignments ;
 ; out[0]       ; Incomplete set of assignments ;
 ; out[1]       ; Incomplete set of assignments ;
 ; out[2]       ; Incomplete set of assignments ;
@@ -181,27 +173,27 @@ agreement for further details.
 ; out[6]       ; Incomplete set of assignments ;
 ; out[7]       ; Incomplete set of assignments ;
 ; flag         ; Incomplete set of assignments ;
-; operation[2] ; Incomplete set of assignments ;
 ; A[0]         ; Incomplete set of assignments ;
-; operation[3] ; Incomplete set of assignments ;
-; A[1]         ; Incomplete set of assignments ;
-; A[2]         ; Incomplete set of assignments ;
+; B[0]         ; Incomplete set of assignments ;
+; operation[2] ; Incomplete set of assignments ;
 ; A[7]         ; Incomplete set of assignments ;
-; A[3]         ; Incomplete set of assignments ;
-; A[4]         ; Incomplete set of assignments ;
-; A[5]         ; Incomplete set of assignments ;
+; B[7]         ; Incomplete set of assignments ;
 ; A[6]         ; Incomplete set of assignments ;
+; B[6]         ; Incomplete set of assignments ;
+; A[5]         ; Incomplete set of assignments ;
+; B[5]         ; Incomplete set of assignments ;
+; A[4]         ; Incomplete set of assignments ;
+; B[4]         ; Incomplete set of assignments ;
+; A[3]         ; Incomplete set of assignments ;
+; B[3]         ; Incomplete set of assignments ;
+; A[2]         ; Incomplete set of assignments ;
+; B[2]         ; Incomplete set of assignments ;
+; A[1]         ; Incomplete set of assignments ;
+; B[1]         ; Incomplete set of assignments ;
+; operation[0] ; Incomplete set of assignments ;
+; operation[3] ; Incomplete set of assignments ;
 ; operation[1] ; Incomplete set of assignments ;
 ; flagIn       ; Incomplete set of assignments ;
-; operation[0] ; Incomplete set of assignments ;
-; B[0]         ; Missing location assignment   ;
-; B[1]         ; Missing location assignment   ;
-; B[2]         ; Missing location assignment   ;
-; B[3]         ; Missing location assignment   ;
-; B[4]         ; Missing location assignment   ;
-; B[5]         ; Missing location assignment   ;
-; B[6]         ; Missing location assignment   ;
-; B[7]         ; Missing location assignment   ;
 ; out[0]       ; Missing location assignment   ;
 ; out[1]       ; Missing location assignment   ;
 ; out[2]       ; Missing location assignment   ;
@@ -211,19 +203,27 @@ agreement for further details.
 ; out[6]       ; Missing location assignment   ;
 ; out[7]       ; Missing location assignment   ;
 ; flag         ; Missing location assignment   ;
-; operation[2] ; Missing location assignment   ;
 ; A[0]         ; Missing location assignment   ;
-; operation[3] ; Missing location assignment   ;
-; A[1]         ; Missing location assignment   ;
-; A[2]         ; Missing location assignment   ;
+; B[0]         ; Missing location assignment   ;
+; operation[2] ; Missing location assignment   ;
 ; A[7]         ; Missing location assignment   ;
-; A[3]         ; Missing location assignment   ;
-; A[4]         ; Missing location assignment   ;
-; A[5]         ; Missing location assignment   ;
+; B[7]         ; Missing location assignment   ;
 ; A[6]         ; Missing location assignment   ;
+; B[6]         ; Missing location assignment   ;
+; A[5]         ; Missing location assignment   ;
+; B[5]         ; Missing location assignment   ;
+; A[4]         ; Missing location assignment   ;
+; B[4]         ; Missing location assignment   ;
+; A[3]         ; Missing location assignment   ;
+; B[3]         ; Missing location assignment   ;
+; A[2]         ; Missing location assignment   ;
+; B[2]         ; Missing location assignment   ;
+; A[1]         ; Missing location assignment   ;
+; B[1]         ; Missing location assignment   ;
+; operation[0] ; Missing location assignment   ;
+; operation[3] ; Missing location assignment   ;
 ; operation[1] ; Missing location assignment   ;
 ; flagIn       ; Missing location assignment   ;
-; operation[0] ; Missing location assignment   ;
 +--------------+-------------------------------+
 
 
@@ -233,8 +233,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 174 ) ; 0.00 % ( 0 / 174 )         ; 0.00 % ( 0 / 174 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 174 ) ; 0.00 % ( 0 / 174 )         ; 0.00 % ( 0 / 174 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 247 ) ; 0.00 % ( 0 / 247 )         ; 0.00 % ( 0 / 247 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 247 ) ; 0.00 % ( 0 / 247 )         ; 0.00 % ( 0 / 247 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -257,7 +257,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 164 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 237 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -273,26 +273,26 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 103 / 28,848 ( < 1 % ) ;
-;     -- Combinational with no register       ; 103                    ;
+; Total logic elements                        ; 176 / 28,848 ( < 1 % ) ;
+;     -- Combinational with no register       ; 176                    ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 41                     ;
-;     -- 3 input functions                    ; 19                     ;
-;     -- <=2 input functions                  ; 43                     ;
+;     -- 4 input functions                    ; 81                     ;
+;     -- 3 input functions                    ; 58                     ;
+;     -- <=2 input functions                  ; 37                     ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 76                     ;
-;     -- arithmetic mode                      ; 27                     ;
+;     -- normal mode                          ; 113                    ;
+;     -- arithmetic mode                      ; 63                     ;
 ;                                             ;                        ;
 ; Total registers*                            ; 0 / 31,441 ( 0 % )     ;
 ;     -- Dedicated logic registers            ; 0 / 28,848 ( 0 % )     ;
 ;     -- I/O registers                        ; 0 / 2,593 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 7 / 1,803 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 12 / 1,803 ( < 1 % )   ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 30 / 533 ( 6 % )       ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )          ;
@@ -310,12 +310,12 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.0%     ;
-; Peak interconnect usage (total/H/V)         ; 1.4% / 2.5% / 0.5%     ;
-; Maximum fan-out                             ; 21                     ;
-; Highest non-global fan-out                  ; 21                     ;
-; Total fan-out                               ; 348                    ;
-; Average fan-out                             ; 2.01                   ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
+; Peak interconnect usage (total/H/V)         ; 2.5% / 2.3% / 2.7%     ;
+; Maximum fan-out                             ; 31                     ;
+; Highest non-global fan-out                  ; 31                     ;
+; Total fan-out                               ; 611                    ;
+; Average fan-out                             ; 2.48                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -328,26 +328,26 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 103 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
-;     -- Combinational with no register       ; 103                   ; 0                              ;
+; Total logic elements                        ; 176 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
+;     -- Combinational with no register       ; 176                   ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 41                    ; 0                              ;
-;     -- 3 input functions                    ; 19                    ; 0                              ;
-;     -- <=2 input functions                  ; 43                    ; 0                              ;
+;     -- 4 input functions                    ; 81                    ; 0                              ;
+;     -- 3 input functions                    ; 58                    ; 0                              ;
+;     -- <=2 input functions                  ; 37                    ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 76                    ; 0                              ;
-;     -- arithmetic mode                      ; 27                    ; 0                              ;
+;     -- normal mode                          ; 113                   ; 0                              ;
+;     -- arithmetic mode                      ; 63                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 0                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 28848 ( 0 % )     ; 0 / 28848 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 1803 ( < 1 % )    ; 0 / 1803 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 12 / 1803 ( < 1 % )   ; 0 / 1803 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 30                    ; 0                              ;
@@ -362,7 +362,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 343                   ; 5                              ;
+;     -- Total Connections                    ; 606                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -395,27 +395,27 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; A[0]         ; M7    ; 1        ; 0            ; 33           ; 14           ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[1]         ; G1    ; 1        ; 0            ; 30           ; 0            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[2]         ; L6    ; 1        ; 0            ; 34           ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[3]         ; J3    ; 1        ; 0            ; 31           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[4]         ; N4    ; 1        ; 0            ; 30           ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[5]         ; L7    ; 1        ; 0            ; 33           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[6]         ; G2    ; 1        ; 0            ; 31           ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; A[7]         ; L4    ; 1        ; 0            ; 33           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[0]         ; AG10  ; 3        ; 29           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[1]         ; AE18  ; 4        ; 48           ; 0            ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[2]         ; D9    ; 8        ; 7            ; 43           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[3]         ; B26   ; 7        ; 65           ; 43           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[4]         ; G8    ; 8        ; 9            ; 43           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[5]         ; F21   ; 7        ; 61           ; 43           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[6]         ; AD15  ; 4        ; 38           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; B[7]         ; J12   ; 8        ; 27           ; 43           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; flagIn       ; K7    ; 1        ; 0            ; 34           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; operation[0] ; M4    ; 1        ; 0            ; 29           ; 7            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; operation[1] ; J4    ; 1        ; 0            ; 32           ; 21           ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; operation[2] ; L3    ; 1        ; 0            ; 32           ; 0            ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; operation[3] ; H6    ; 1        ; 0            ; 32           ; 7            ; 21                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[0]         ; W1    ; 2        ; 0            ; 15           ; 21           ; 31                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[1]         ; U1    ; 2        ; 0            ; 17           ; 14           ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[2]         ; U4    ; 2        ; 0            ; 18           ; 21           ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[3]         ; U3    ; 2        ; 0            ; 20           ; 14           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[4]         ; V6    ; 2        ; 0            ; 14           ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[5]         ; Y6    ; 2        ; 0            ; 13           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[6]         ; T8    ; 2        ; 0            ; 18           ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; A[7]         ; T3    ; 2        ; 0            ; 18           ; 7            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[0]         ; W4    ; 2        ; 0            ; 14           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[1]         ; AB1   ; 2        ; 0            ; 15           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[2]         ; V5    ; 2        ; 0            ; 13           ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[3]         ; V9    ; 2        ; 0            ; 16           ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[4]         ; V1    ; 2        ; 0            ; 15           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[5]         ; U5    ; 2        ; 0            ; 14           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[6]         ; AD2   ; 2        ; 0            ; 9            ; 7            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; B[7]         ; V3    ; 2        ; 0            ; 16           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; flagIn       ; T4    ; 2        ; 0            ; 18           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; operation[0] ; R7    ; 2        ; 0            ; 19           ; 21           ; 22                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; operation[1] ; V4    ; 2        ; 0            ; 17           ; 21           ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; operation[2] ; V2    ; 2        ; 0            ; 16           ; 7            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; operation[3] ; U6    ; 2        ; 0            ; 13           ; 21           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -424,15 +424,15 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; flag   ; H5    ; 1        ; 0            ; 32           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[0] ; K2    ; 1        ; 0            ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[1] ; F2    ; 1        ; 0            ; 35           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[2] ; N3    ; 1        ; 0            ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[3] ; K1    ; 1        ; 0            ; 30           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[4] ; N8    ; 1        ; 0            ; 31           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[5] ; J6    ; 1        ; 0            ; 36           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[6] ; L8    ; 1        ; 0            ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; out[7] ; M8    ; 1        ; 0            ; 33           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; flag   ; R3    ; 2        ; 0            ; 19           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[0] ; AD1   ; 2        ; 0            ; 9            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[1] ; R1    ; 2        ; 0            ; 20           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[2] ; W3    ; 2        ; 0            ; 14           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[3] ; W2    ; 2        ; 0            ; 15           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[4] ; Y3    ; 2        ; 0            ; 11           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[5] ; T7    ; 2        ; 0            ; 12           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[6] ; AB2   ; 2        ; 0            ; 16           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; out[7] ; R5    ; 2        ; 0            ; 17           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -454,7 +454,6 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; M22      ; MSEL2                        ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P22      ; MSEL3                        ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P28      ; DIFFIO_R24n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; D9       ; DIFFIO_T6p, DATA8            ; Use as regular IO        ; B[2]                    ; Dual Purpose Pin          ;
 +----------+------------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -463,14 +462,14 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 26 / 59 ( 44 % ) ; 2.5V          ; --           ;
-; 2        ; 0 / 73 ( 0 % )   ; 2.5V          ; --           ;
-; 3        ; 1 / 65 ( 2 % )   ; 2.5V          ; --           ;
-; 4        ; 2 / 67 ( 3 % )   ; 2.5V          ; --           ;
+; 1        ; 4 / 59 ( 7 % )   ; 2.5V          ; --           ;
+; 2        ; 30 / 73 ( 41 % ) ; 2.5V          ; --           ;
+; 3        ; 0 / 65 ( 0 % )   ; 2.5V          ; --           ;
+; 4        ; 0 / 67 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 71 ( 0 % )   ; 2.5V          ; --           ;
 ; 6        ; 1 / 65 ( 2 % )   ; 2.5V          ; --           ;
-; 7        ; 2 / 67 ( 3 % )   ; 2.5V          ; --           ;
-; 8        ; 3 / 66 ( 5 % )   ; 2.5V          ; --           ;
+; 7        ; 0 / 67 ( 0 % )   ; 2.5V          ; --           ;
+; 8        ; 0 / 66 ( 0 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -533,8 +532,8 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; AA26     ; 303        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AA27     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA28     ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AB1      ; 89         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB2      ; 88         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AB1      ; 89         ; 2        ; B[1]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AB2      ; 88         ; 2        ; out[6]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AB3      ; 116        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB4      ; 135        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; AB5      ; 127        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -589,8 +588,8 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; AC26     ; 293        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AC27     ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AC28     ; 296        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD1      ; 115        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD2      ; 114        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AD1      ; 115        ; 2        ; out[0]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AD2      ; 114        ; 2        ; B[6]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AD3      ; 132        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AD4      ; 133        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AD5      ; 138        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -603,7 +602,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; AD12     ; 143        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD13     ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AD14     ; 201        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AD15     ; 210        ; 4        ; B[6]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD15     ; 210        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD16     ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AD17     ; 226        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD18     ; 242        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -634,7 +633,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; AE15     ; 211        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE16     ; 221        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE17     ; 222        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE18     ; 228        ; 4        ; B[1]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE18     ; 228        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE19     ; 237        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE20     ; 249        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE21     ; 244        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -682,7 +681,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; AG7      ; 170        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG8      ; 176        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG9      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AG10     ; 192        ; 3        ; B[0]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG10     ; 192        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG11     ; 195        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG12     ; 200        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG13     ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -752,7 +751,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; B23      ; 429        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B24      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B25      ; 421        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B26      ; 415        ; 7        ; B[3]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B26      ; 415        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B27      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B28      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C1       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -791,7 +790,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; D6       ; 537        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ; 535        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D8       ; 533        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D9       ; 530        ; 8        ; B[2]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D9       ; 530        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ; 509        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ; 505        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D12      ; 488        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -840,7 +839,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; E27      ; 400        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E28      ; 398        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F1       ; 26         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F2       ; 25         ; 1        ; out[1]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F2       ; 25         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F3       ; 15         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F4       ; 17         ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; F5       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -859,7 +858,7 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; F18      ; 439        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; F19      ; 434        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F21      ; 424        ; 7        ; B[5]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F21      ; 424        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F22      ; 426        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; F23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F24      ; 381        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -867,14 +866,14 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; F26      ; 402        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F27      ; 397        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F28      ; 396        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G1       ; 44         ; 1        ; A[1]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G2       ; 43         ; 1        ; A[6]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G1       ; 44         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G2       ; 43         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G3       ; 20         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G4       ; 19         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G5       ; 9          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G6       ; 8          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G7       ; 13         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G8       ; 528        ; 8        ; B[4]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; G8       ; 528        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G9       ; 536        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G10      ; 516        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G11      ; 517        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -899,8 +898,8 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; H2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H3       ; 11         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H4       ; 10         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; H5       ; 38         ; 1        ; flag                                                      ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; H6       ; 37         ; 1        ; operation[3]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H5       ; 38         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; H6       ; 37         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H7       ; 5          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; H8       ; 542        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H9       ;            ;          ; GNDA3                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -925,16 +924,16 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; H28      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; J1       ; 67         ; 1        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; J2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J3       ; 40         ; 1        ; A[3]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J4       ; 39         ; 1        ; operation[1]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J3       ; 40         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J4       ; 39         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J5       ; 12         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J6       ; 22         ; 1        ; out[5]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J6       ; 22         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J7       ; 24         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J8       ;            ; --       ; VCCA3                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; J9       ;            ;          ; VCCD_PLL3                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J10      ; 520        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; J11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J12      ; 496        ; 8        ; B[7]                                                      ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; J12      ; 496        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; J13      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; J14      ; 476        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; J15      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -951,13 +950,13 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; J26      ; 371        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J27      ; 345        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; J28      ; 344        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; K1       ; 46         ; 1        ; out[3]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K2       ; 50         ; 1        ; out[0]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K1       ; 46         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K2       ; 50         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K3       ; 28         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K4       ; 27         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K5       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K7       ; 29         ; 1        ; flagIn                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K7       ; 29         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K8       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -981,12 +980,12 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; K28      ; 380        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L1       ; 52         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L2       ; 51         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L3       ; 36         ; 1        ; operation[2]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L4       ; 35         ; 1        ; A[7]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L3       ; 36         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L4       ; 35         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L5       ; 18         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; L6       ; 30         ; 1        ; A[2]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L7       ; 32         ; 1        ; A[5]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L8       ; 31         ; 1        ; out[6]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L6       ; 30         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L7       ; 32         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L8       ; 31         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1010,11 +1009,11 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; M1       ; 55         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M2       ; 54         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M3       ; 45         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M4       ; 49         ; 1        ; operation[0]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M4       ; 49         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M5       ; 53         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M6       ; 41         ; 1        ; ^nSTATUS                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; M7       ; 34         ; 1        ; A[0]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M8       ; 33         ; 1        ; out[7]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M7       ; 34         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M8       ; 33         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M9       ; 2          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1037,12 +1036,12 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; M28      ; 364        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N3       ; 48         ; 1        ; out[2]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N4       ; 47         ; 1        ; A[4]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 48         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N4       ; 47         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N5       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N7       ; 59         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
-; N8       ; 42         ; 1        ; out[4]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N8       ; 42         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N10      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1091,13 +1090,13 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; P26      ; 353        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P27      ; 361        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P28      ; 360        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R1       ; 71         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R1       ; 71         ; 2        ; out[1]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R2       ; 70         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R3       ; 74         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R3       ; 74         ; 2        ; flag                                                      ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R4       ; 76         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R5       ; 82         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R5       ; 82         ; 2        ; out[7]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R6       ; 75         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R7       ; 77         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R7       ; 77         ; 2        ; operation[0]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R8       ; 65         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; R9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R10      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1121,12 +1120,12 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; R28      ; 335        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T1       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; T2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T3       ; 79         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; T4       ; 78         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; T3       ; 79         ; 2        ; A[7]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T4       ; 78         ; 2        ; flagIn                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T5       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; T6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T7       ; 103        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; T8       ; 80         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; T7       ; 103        ; 2        ; out[5]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T8       ; 80         ; 2        ; A[6]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T9       ; 108        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1147,12 +1146,12 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; T26      ; 326        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T27      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T28      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; U1       ; 83         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U1       ; 83         ; 2        ; A[1]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U2       ; 73         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; U3       ; 72         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; U4       ; 81         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; U5       ; 96         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; U6       ; 100        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U3       ; 72         ; 2        ; A[3]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U4       ; 81         ; 2        ; A[2]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U5       ; 96         ; 2        ; B[5]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U6       ; 100        ; 2        ; operation[3]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U7       ; 129        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U8       ; 130        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1175,15 +1174,15 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; U26      ; 304        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U27      ; 322        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U28      ; 324        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V1       ; 90         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V2       ; 86         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V3       ; 85         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V4       ; 84         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V5       ; 99         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V6       ; 95         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; V1       ; 90         ; 2        ; B[4]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V2       ; 86         ; 2        ; operation[2]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V3       ; 85         ; 2        ; B[7]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V4       ; 84         ; 2        ; operation[1]                                              ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V5       ; 99         ; 2        ; B[2]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V6       ; 95         ; 2        ; A[4]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V7       ; 112        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V8       ; 121        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; V9       ; 87         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; V9       ; 87         ; 2        ; B[3]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1203,10 +1202,10 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; V26      ; 300        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V27      ; 316        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V28      ; 314        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W1       ; 92         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W2       ; 91         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W3       ; 93         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W4       ; 94         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; W1       ; 92         ; 2        ; A[0]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W2       ; 91         ; 2        ; out[3]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W3       ; 93         ; 2        ; out[2]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W4       ; 94         ; 2        ; B[0]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W5       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; W6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W7       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -1233,10 +1232,10 @@ The pin-out file can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_fi
 ; W28      ; 312        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y1       ; 69         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; Y2       ; 68         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; Y3       ; 107        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y3       ; 107        ; 2        ; out[4]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y4       ; 106        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y5       ; 97         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; Y6       ; 98         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y6       ; 98         ; 2        ; A[5]                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y7       ; 105        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y8       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; Y9       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1268,7 +1267,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |alu                       ; 103 (103)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 30   ; 0            ; 103 (103)    ; 0 (0)             ; 0 (0)            ; |alu                ; work         ;
+; |alu                       ; 176 (176)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 30   ; 0            ; 176 (176)    ; 0 (0)             ; 0 (0)            ; |alu                ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1278,14 +1277,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name         ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
-; B[0]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[1]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[2]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[3]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[4]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[5]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[6]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; B[7]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; out[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; out[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; out[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1295,192 +1286,336 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; out[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; out[7]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; flag         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; operation[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[0]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; operation[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[1]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[2]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[7]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[3]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[4]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[5]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[0]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[0]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; operation[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[7]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[7]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; A[6]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[6]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[5]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[5]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[4]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[4]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[3]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[3]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[2]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[2]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[1]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[1]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; operation[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; operation[3] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; operation[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; flagIn       ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; operation[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------+
-; Pad To Core Delay Chain Fanout                     ;
-+----------------------+-------------------+---------+
-; Source Pin / Fanout  ; Pad To Core Index ; Setting ;
-+----------------------+-------------------+---------+
-; B[0]                 ;                   ;         ;
-; B[1]                 ;                   ;         ;
-; B[2]                 ;                   ;         ;
-; B[3]                 ;                   ;         ;
-; B[4]                 ;                   ;         ;
-; B[5]                 ;                   ;         ;
-; B[6]                 ;                   ;         ;
-; B[7]                 ;                   ;         ;
-; operation[2]         ;                   ;         ;
-;      - Decoder0~0    ; 0                 ; 6       ;
-;      - Mux7~4        ; 0                 ; 6       ;
-;      - Mux7~5        ; 0                 ; 6       ;
-;      - Add3~2        ; 0                 ; 6       ;
-;      - Mux6~0        ; 0                 ; 6       ;
-;      - Mux6~3        ; 0                 ; 6       ;
-;      - Mux6~4        ; 0                 ; 6       ;
-;      - Mux6~7        ; 0                 ; 6       ;
-;      - Add3~5        ; 0                 ; 6       ;
-;      - Add3~8        ; 0                 ; 6       ;
-;      - Add3~11       ; 0                 ; 6       ;
-;      - Add3~14       ; 0                 ; 6       ;
-;      - Add3~17       ; 0                 ; 6       ;
-;      - Mux0~2        ; 0                 ; 6       ;
-;      - Mux7~7        ; 0                 ; 6       ;
-;      - Mux0~6        ; 0                 ; 6       ;
-; A[0]                 ;                   ;         ;
-;      - Add0~0        ; 0                 ; 6       ;
-;      - Add1~0        ; 0                 ; 6       ;
-;      - Add2~0        ; 0                 ; 6       ;
-;      - Add0~2        ; 0                 ; 6       ;
-;      - Add0~4        ; 0                 ; 6       ;
-;      - Add0~6        ; 0                 ; 6       ;
-;      - Add0~8        ; 0                 ; 6       ;
-;      - Add0~10       ; 0                 ; 6       ;
-;      - Add0~12       ; 0                 ; 6       ;
-;      - Add0~14       ; 0                 ; 6       ;
-;      - Mux7~2        ; 0                 ; 6       ;
-;      - Mux7~3        ; 0                 ; 6       ;
-;      - Mux7~4        ; 0                 ; 6       ;
-;      - ShiftLeft0~2  ; 0                 ; 6       ;
-;      - ShiftLeft0~4  ; 0                 ; 6       ;
-;      - ShiftLeft0~5  ; 0                 ; 6       ;
-;      - ShiftLeft0~7  ; 0                 ; 6       ;
-;      - ShiftLeft0~8  ; 0                 ; 6       ;
-;      - ShiftLeft0~10 ; 0                 ; 6       ;
-;      - Mux0~3        ; 0                 ; 6       ;
-; operation[3]         ;                   ;         ;
-;      - Mux7~2        ; 1                 ; 6       ;
-;      - Mux7~3        ; 1                 ; 6       ;
-;      - Mux7~6        ; 1                 ; 6       ;
-;      - Mux6~0        ; 1                 ; 6       ;
-;      - Mux6~7        ; 1                 ; 6       ;
-;      - Mux6~8        ; 1                 ; 6       ;
-;      - Mux6~10       ; 1                 ; 6       ;
-;      - Mux5~3        ; 1                 ; 6       ;
-;      - Mux5~5        ; 1                 ; 6       ;
-;      - Mux4~3        ; 1                 ; 6       ;
-;      - Mux4~5        ; 1                 ; 6       ;
-;      - Mux3~3        ; 1                 ; 6       ;
-;      - Mux3~5        ; 1                 ; 6       ;
-;      - Mux2~3        ; 1                 ; 6       ;
-;      - Mux2~5        ; 1                 ; 6       ;
-;      - Mux1~3        ; 1                 ; 6       ;
-;      - Mux1~5        ; 1                 ; 6       ;
-;      - Mux6~11       ; 1                 ; 6       ;
-;      - Mux0~3        ; 1                 ; 6       ;
-;      - Mux0~4        ; 1                 ; 6       ;
-;      - flag~0        ; 1                 ; 6       ;
-; A[1]                 ;                   ;         ;
-;      - Add2~2        ; 0                 ; 6       ;
-;      - Add3~0        ; 0                 ; 6       ;
-;      - Add1~2        ; 0                 ; 6       ;
-;      - ShiftLeft0~1  ; 0                 ; 6       ;
-;      - Mux7~4        ; 0                 ; 6       ;
-;      - Mux6~2        ; 0                 ; 6       ;
-;      - ShiftLeft0~3  ; 0                 ; 6       ;
-;      - ShiftLeft0~6  ; 0                 ; 6       ;
-;      - ShiftLeft0~9  ; 0                 ; 6       ;
-; A[2]                 ;                   ;         ;
-;      - Add2~4        ; 0                 ; 6       ;
-;      - Add3~3        ; 0                 ; 6       ;
-;      - Add1~4        ; 0                 ; 6       ;
-;      - ShiftLeft0~1  ; 0                 ; 6       ;
-;      - Mux6~5        ; 0                 ; 6       ;
-;      - ShiftLeft0~3  ; 0                 ; 6       ;
-;      - Mux5~0        ; 0                 ; 6       ;
-;      - ShiftLeft0~6  ; 0                 ; 6       ;
-;      - ShiftLeft0~9  ; 0                 ; 6       ;
-; A[7]                 ;                   ;         ;
-;      - Add3~18       ; 1                 ; 6       ;
-;      - Add1~14       ; 1                 ; 6       ;
-;      - Add2~14       ; 1                 ; 6       ;
-;      - ShiftLeft0~1  ; 1                 ; 6       ;
-;      - ShiftLeft0~3  ; 1                 ; 6       ;
-;      - ShiftLeft0~6  ; 1                 ; 6       ;
-;      - ShiftLeft0~9  ; 1                 ; 6       ;
-;      - Mux1~1        ; 1                 ; 6       ;
-;      - Mux0~2        ; 1                 ; 6       ;
-; A[3]                 ;                   ;         ;
-;      - Add2~6        ; 0                 ; 6       ;
-;      - Add3~6        ; 0                 ; 6       ;
-;      - Add1~6        ; 0                 ; 6       ;
-;      - ShiftLeft0~0  ; 0                 ; 6       ;
-;      - Mux5~1        ; 0                 ; 6       ;
-;      - Mux4~0        ; 0                 ; 6       ;
-; A[4]                 ;                   ;         ;
-;      - Add2~8        ; 1                 ; 6       ;
-;      - Add3~9        ; 1                 ; 6       ;
-;      - Add1~8        ; 1                 ; 6       ;
-;      - ShiftLeft0~0  ; 1                 ; 6       ;
-;      - Mux4~1        ; 1                 ; 6       ;
-;      - Mux3~0        ; 1                 ; 6       ;
-; A[5]                 ;                   ;         ;
-;      - Add2~10       ; 0                 ; 6       ;
-;      - Add3~12       ; 0                 ; 6       ;
-;      - Add1~10       ; 0                 ; 6       ;
-;      - ShiftLeft0~0  ; 0                 ; 6       ;
-;      - Mux3~1        ; 0                 ; 6       ;
-;      - Mux2~0        ; 0                 ; 6       ;
-; A[6]                 ;                   ;         ;
-;      - Add2~12       ; 1                 ; 6       ;
-;      - Add3~15       ; 1                 ; 6       ;
-;      - Add1~12       ; 1                 ; 6       ;
-;      - ShiftLeft0~0  ; 1                 ; 6       ;
-;      - Mux2~1        ; 1                 ; 6       ;
-;      - Mux1~0        ; 1                 ; 6       ;
-; operation[1]         ;                   ;         ;
-;      - Decoder0~0    ; 0                 ; 6       ;
-;      - Mux7~3        ; 0                 ; 6       ;
-;      - Mux7~4        ; 0                 ; 6       ;
-;      - Mux7~5        ; 0                 ; 6       ;
-;      - Mux6~0        ; 0                 ; 6       ;
-;      - Mux6~1        ; 0                 ; 6       ;
-;      - Mux6~3        ; 0                 ; 6       ;
-;      - Mux6~4        ; 0                 ; 6       ;
-;      - Mux6~7        ; 0                 ; 6       ;
-;      - Mux6~11       ; 0                 ; 6       ;
-;      - Mux0~4        ; 0                 ; 6       ;
-;      - Mux7~7        ; 0                 ; 6       ;
-;      - Mux0~6        ; 0                 ; 6       ;
-; flagIn               ;                   ;         ;
-;      - Add1~0        ; 1                 ; 6       ;
-;      - flag~0        ; 1                 ; 6       ;
-; operation[0]         ;                   ;         ;
-;      - Mux7~6        ; 0                 ; 6       ;
-;      - Mux6~1        ; 0                 ; 6       ;
-;      - Mux6~2        ; 0                 ; 6       ;
-;      - Mux6~3        ; 0                 ; 6       ;
-;      - Mux6~4        ; 0                 ; 6       ;
-;      - Mux6~7        ; 0                 ; 6       ;
-;      - Mux6~10       ; 0                 ; 6       ;
-;      - Mux5~0        ; 0                 ; 6       ;
-;      - Mux5~5        ; 0                 ; 6       ;
-;      - Mux4~0        ; 0                 ; 6       ;
-;      - Mux4~5        ; 0                 ; 6       ;
-;      - Mux3~0        ; 0                 ; 6       ;
-;      - Mux3~5        ; 0                 ; 6       ;
-;      - Mux2~0        ; 0                 ; 6       ;
-;      - Mux2~5        ; 0                 ; 6       ;
-;      - Mux1~0        ; 0                 ; 6       ;
-;      - Mux1~5        ; 0                 ; 6       ;
-;      - Mux6~11       ; 0                 ; 6       ;
-;      - Mux0~5        ; 0                 ; 6       ;
-;      - flag~0        ; 0                 ; 6       ;
-+----------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; A[0]                ;                   ;         ;
+;      - Add2~0       ; 1                 ; 6       ;
+;      - Add1~0       ; 1                 ; 6       ;
+;      - Add0~0       ; 1                 ; 6       ;
+;      - Add3~0       ; 1                 ; 6       ;
+;      - Add4~0       ; 1                 ; 6       ;
+;      - Add5~0       ; 1                 ; 6       ;
+;      - Add2~2       ; 1                 ; 6       ;
+;      - Add2~4       ; 1                 ; 6       ;
+;      - Add2~6       ; 1                 ; 6       ;
+;      - Add2~8       ; 1                 ; 6       ;
+;      - Add2~10      ; 1                 ; 6       ;
+;      - Add2~12      ; 1                 ; 6       ;
+;      - Add2~14      ; 1                 ; 6       ;
+;      - LessThan0~1  ; 1                 ; 6       ;
+;      - LessThan1~1  ; 1                 ; 6       ;
+;      - Mux7~0       ; 1                 ; 6       ;
+;      - Mux7~5       ; 1                 ; 6       ;
+;      - Mux7~7       ; 1                 ; 6       ;
+;      - ShiftLeft0~0 ; 1                 ; 6       ;
+;      - ShiftLeft0~2 ; 1                 ; 6       ;
+;      - ShiftLeft0~3 ; 1                 ; 6       ;
+;      - ShiftLeft0~5 ; 1                 ; 6       ;
+;      - ShiftLeft0~6 ; 1                 ; 6       ;
+;      - ShiftLeft0~8 ; 1                 ; 6       ;
+;      - Mux7~10      ; 1                 ; 6       ;
+;      - Mux7~13      ; 1                 ; 6       ;
+;      - Mux7~15      ; 1                 ; 6       ;
+;      - Mux8~6       ; 1                 ; 6       ;
+;      - Mux8~9       ; 1                 ; 6       ;
+;      - Mux8~10      ; 1                 ; 6       ;
+;      - Mux8~14      ; 1                 ; 6       ;
+; B[0]                ;                   ;         ;
+;      - Add1~0       ; 0                 ; 6       ;
+;      - Add0~0       ; 0                 ; 6       ;
+;      - Add3~0       ; 0                 ; 6       ;
+;      - LessThan0~1  ; 0                 ; 6       ;
+;      - LessThan1~1  ; 0                 ; 6       ;
+;      - Mux7~0       ; 0                 ; 6       ;
+; operation[2]        ;                   ;         ;
+;      - Mux7~0       ; 1                 ; 6       ;
+;      - Mux7~1       ; 1                 ; 6       ;
+;      - Mux7~2       ; 1                 ; 6       ;
+;      - Mux7~8       ; 1                 ; 6       ;
+;      - Mux6~0       ; 1                 ; 6       ;
+;      - Mux6~1       ; 1                 ; 6       ;
+;      - Mux6~2       ; 1                 ; 6       ;
+;      - Mux6~8       ; 1                 ; 6       ;
+;      - Mux6~9       ; 1                 ; 6       ;
+;      - Mux6~12      ; 1                 ; 6       ;
+;      - Mux0~0       ; 1                 ; 6       ;
+;      - Mux0~1       ; 1                 ; 6       ;
+;      - Mux0~2       ; 1                 ; 6       ;
+;      - Mux0~3       ; 1                 ; 6       ;
+;      - Mux8~0       ; 1                 ; 6       ;
+;      - Mux8~1       ; 1                 ; 6       ;
+;      - Mux8~2       ; 1                 ; 6       ;
+;      - Mux8~3       ; 1                 ; 6       ;
+;      - Mux0~6       ; 1                 ; 6       ;
+;      - Mux7~18      ; 1                 ; 6       ;
+; A[7]                ;                   ;         ;
+;      - LessThan0~14 ; 0                 ; 6       ;
+;      - LessThan1~14 ; 0                 ; 6       ;
+;      - Add1~14      ; 0                 ; 6       ;
+;      - Add0~14      ; 0                 ; 6       ;
+;      - Add3~14      ; 0                 ; 6       ;
+;      - Add4~14      ; 0                 ; 6       ;
+;      - Add5~14      ; 0                 ; 6       ;
+;      - Add6~12      ; 0                 ; 6       ;
+;      - Mux7~4       ; 0                 ; 6       ;
+;      - ShiftLeft0~1 ; 0                 ; 6       ;
+;      - ShiftLeft0~4 ; 0                 ; 6       ;
+;      - ShiftLeft0~7 ; 0                 ; 6       ;
+;      - Mux1~0       ; 0                 ; 6       ;
+;      - Mux0~0       ; 0                 ; 6       ;
+;      - Mux7~12      ; 0                 ; 6       ;
+;      - Mux7~13      ; 0                 ; 6       ;
+;      - Mux7~16      ; 0                 ; 6       ;
+; B[7]                ;                   ;         ;
+;      - LessThan0~14 ; 1                 ; 6       ;
+;      - LessThan1~14 ; 1                 ; 6       ;
+;      - Add1~14      ; 1                 ; 6       ;
+;      - Add0~14      ; 1                 ; 6       ;
+;      - Add3~14      ; 1                 ; 6       ;
+;      - Mux0~0       ; 1                 ; 6       ;
+;      - Mux8~15      ; 1                 ; 6       ;
+; A[6]                ;                   ;         ;
+;      - Add6~10      ; 1                 ; 6       ;
+;      - Add3~12      ; 1                 ; 6       ;
+;      - Add0~12      ; 1                 ; 6       ;
+;      - Add1~12      ; 1                 ; 6       ;
+;      - Add4~12      ; 1                 ; 6       ;
+;      - Add5~12      ; 1                 ; 6       ;
+;      - LessThan0~13 ; 1                 ; 6       ;
+;      - LessThan1~13 ; 1                 ; 6       ;
+;      - Mux7~3       ; 1                 ; 6       ;
+;      - Mux2~0       ; 1                 ; 6       ;
+;      - Mux1~6       ; 1                 ; 6       ;
+; B[6]                ;                   ;         ;
+;      - Add3~12      ; 1                 ; 6       ;
+;      - Add0~12      ; 1                 ; 6       ;
+;      - Add1~12      ; 1                 ; 6       ;
+;      - LessThan0~13 ; 1                 ; 6       ;
+;      - LessThan1~13 ; 1                 ; 6       ;
+;      - Mux1~5       ; 1                 ; 6       ;
+;      - Mux8~11      ; 1                 ; 6       ;
+;      - Mux8~15      ; 1                 ; 6       ;
+; A[5]                ;                   ;         ;
+;      - Add6~8       ; 0                 ; 6       ;
+;      - Add3~10      ; 0                 ; 6       ;
+;      - Add0~10      ; 0                 ; 6       ;
+;      - Add1~10      ; 0                 ; 6       ;
+;      - Add4~10      ; 0                 ; 6       ;
+;      - Add5~10      ; 0                 ; 6       ;
+;      - LessThan0~11 ; 0                 ; 6       ;
+;      - LessThan1~11 ; 0                 ; 6       ;
+;      - Mux7~3       ; 0                 ; 6       ;
+;      - Mux3~0       ; 0                 ; 6       ;
+;      - Mux2~6       ; 0                 ; 6       ;
+; B[5]                ;                   ;         ;
+;      - Add3~10      ; 0                 ; 6       ;
+;      - Add0~10      ; 0                 ; 6       ;
+;      - Add1~10      ; 0                 ; 6       ;
+;      - LessThan0~11 ; 0                 ; 6       ;
+;      - LessThan1~11 ; 0                 ; 6       ;
+;      - Mux2~5       ; 0                 ; 6       ;
+;      - Mux8~11      ; 0                 ; 6       ;
+;      - Mux8~12      ; 0                 ; 6       ;
+;      - Mux8~14      ; 0                 ; 6       ;
+; A[4]                ;                   ;         ;
+;      - Add6~6       ; 0                 ; 6       ;
+;      - Add3~8       ; 0                 ; 6       ;
+;      - Add0~8       ; 0                 ; 6       ;
+;      - Add1~8       ; 0                 ; 6       ;
+;      - Add4~8       ; 0                 ; 6       ;
+;      - Add5~8       ; 0                 ; 6       ;
+;      - LessThan0~9  ; 0                 ; 6       ;
+;      - LessThan1~9  ; 0                 ; 6       ;
+;      - Mux7~3       ; 0                 ; 6       ;
+;      - Mux4~0       ; 0                 ; 6       ;
+;      - Mux3~6       ; 0                 ; 6       ;
+; B[4]                ;                   ;         ;
+;      - Add3~8       ; 1                 ; 6       ;
+;      - Add0~8       ; 1                 ; 6       ;
+;      - Add1~8       ; 1                 ; 6       ;
+;      - LessThan0~9  ; 1                 ; 6       ;
+;      - LessThan1~9  ; 1                 ; 6       ;
+;      - Mux3~5       ; 1                 ; 6       ;
+;      - Mux8~7       ; 1                 ; 6       ;
+;      - Mux8~10      ; 1                 ; 6       ;
+;      - Mux8~12      ; 1                 ; 6       ;
+;      - Mux8~14      ; 1                 ; 6       ;
+; A[3]                ;                   ;         ;
+;      - Add6~4       ; 0                 ; 6       ;
+;      - Add3~6       ; 0                 ; 6       ;
+;      - Add0~6       ; 0                 ; 6       ;
+;      - Add1~6       ; 0                 ; 6       ;
+;      - Add4~6       ; 0                 ; 6       ;
+;      - Add5~6       ; 0                 ; 6       ;
+;      - LessThan0~7  ; 0                 ; 6       ;
+;      - LessThan1~7  ; 0                 ; 6       ;
+;      - Mux7~3       ; 0                 ; 6       ;
+;      - Mux5~0       ; 0                 ; 6       ;
+;      - Mux4~6       ; 0                 ; 6       ;
+;      - Mux8~5       ; 0                 ; 6       ;
+;      - Mux8~7       ; 0                 ; 6       ;
+;      - Mux8~11      ; 0                 ; 6       ;
+;      - Mux8~12      ; 0                 ; 6       ;
+;      - Mux8~15      ; 0                 ; 6       ;
+; B[3]                ;                   ;         ;
+;      - Add3~6       ; 0                 ; 6       ;
+;      - Add0~6       ; 0                 ; 6       ;
+;      - Add1~6       ; 0                 ; 6       ;
+;      - LessThan0~7  ; 0                 ; 6       ;
+;      - LessThan1~7  ; 0                 ; 6       ;
+;      - Mux4~5       ; 0                 ; 6       ;
+;      - Mux8~5       ; 0                 ; 6       ;
+;      - Mux8~7       ; 0                 ; 6       ;
+;      - Mux8~9       ; 0                 ; 6       ;
+;      - Mux8~10      ; 0                 ; 6       ;
+; A[2]                ;                   ;         ;
+;      - Add6~2       ; 1                 ; 6       ;
+;      - Add3~4       ; 1                 ; 6       ;
+;      - Add0~4       ; 1                 ; 6       ;
+;      - Add1~4       ; 1                 ; 6       ;
+;      - Add4~4       ; 1                 ; 6       ;
+;      - Add5~4       ; 1                 ; 6       ;
+;      - LessThan0~5  ; 1                 ; 6       ;
+;      - LessThan1~5  ; 1                 ; 6       ;
+;      - Mux7~4       ; 1                 ; 6       ;
+;      - Mux6~4       ; 1                 ; 6       ;
+;      - ShiftLeft0~1 ; 1                 ; 6       ;
+;      - Mux5~6       ; 1                 ; 6       ;
+;      - ShiftLeft0~4 ; 1                 ; 6       ;
+;      - ShiftLeft0~7 ; 1                 ; 6       ;
+;      - Mux7~13      ; 1                 ; 6       ;
+;      - Mux8~4       ; 1                 ; 6       ;
+;      - Mux8~7       ; 1                 ; 6       ;
+;      - Mux8~11      ; 1                 ; 6       ;
+;      - Mux8~12      ; 1                 ; 6       ;
+;      - Mux8~15      ; 1                 ; 6       ;
+; B[2]                ;                   ;         ;
+;      - Add3~4       ; 1                 ; 6       ;
+;      - Add0~4       ; 1                 ; 6       ;
+;      - Add1~4       ; 1                 ; 6       ;
+;      - LessThan0~5  ; 1                 ; 6       ;
+;      - LessThan1~5  ; 1                 ; 6       ;
+;      - Mux5~5       ; 1                 ; 6       ;
+;      - Mux8~4       ; 1                 ; 6       ;
+;      - Mux8~6       ; 1                 ; 6       ;
+;      - Mux8~9       ; 1                 ; 6       ;
+; A[1]                ;                   ;         ;
+;      - Add6~0       ; 1                 ; 6       ;
+;      - Add3~2       ; 1                 ; 6       ;
+;      - Add0~2       ; 1                 ; 6       ;
+;      - Add1~2       ; 1                 ; 6       ;
+;      - Add4~2       ; 1                 ; 6       ;
+;      - Add5~2       ; 1                 ; 6       ;
+;      - LessThan0~3  ; 1                 ; 6       ;
+;      - LessThan1~3  ; 1                 ; 6       ;
+;      - Mux7~4       ; 1                 ; 6       ;
+;      - Mux7~5       ; 1                 ; 6       ;
+;      - Mux6~14      ; 1                 ; 6       ;
+;      - ShiftLeft0~1 ; 1                 ; 6       ;
+;      - ShiftLeft0~4 ; 1                 ; 6       ;
+;      - ShiftLeft0~7 ; 1                 ; 6       ;
+;      - Mux7~13      ; 1                 ; 6       ;
+;      - Mux8~4       ; 1                 ; 6       ;
+;      - Mux8~6       ; 1                 ; 6       ;
+;      - Mux8~9       ; 1                 ; 6       ;
+;      - Mux8~10      ; 1                 ; 6       ;
+;      - Mux8~14      ; 1                 ; 6       ;
+; B[1]                ;                   ;         ;
+;      - Add3~2       ; 1                 ; 6       ;
+;      - Add0~2       ; 1                 ; 6       ;
+;      - Add1~2       ; 1                 ; 6       ;
+;      - LessThan0~3  ; 1                 ; 6       ;
+;      - LessThan1~3  ; 1                 ; 6       ;
+;      - Mux6~11      ; 1                 ; 6       ;
+;      - Mux8~4       ; 1                 ; 6       ;
+;      - Mux8~6       ; 1                 ; 6       ;
+; operation[0]        ;                   ;         ;
+;      - Mux7~1       ; 0                 ; 6       ;
+;      - Mux7~5       ; 0                 ; 6       ;
+;      - Mux7~6       ; 0                 ; 6       ;
+;      - Mux7~7       ; 0                 ; 6       ;
+;      - Mux6~0       ; 0                 ; 6       ;
+;      - Mux6~1       ; 0                 ; 6       ;
+;      - Mux6~3       ; 0                 ; 6       ;
+;      - Mux6~8       ; 0                 ; 6       ;
+;      - Mux6~9       ; 0                 ; 6       ;
+;      - Mux6~12      ; 0                 ; 6       ;
+;      - Mux0~1       ; 0                 ; 6       ;
+;      - Mux0~2       ; 0                 ; 6       ;
+;      - Mux7~10      ; 0                 ; 6       ;
+;      - Mux7~11      ; 0                 ; 6       ;
+;      - Mux7~12      ; 0                 ; 6       ;
+;      - Mux7~14      ; 0                 ; 6       ;
+;      - Mux7~15      ; 0                 ; 6       ;
+;      - Mux7~16      ; 0                 ; 6       ;
+;      - Mux8~2       ; 0                 ; 6       ;
+;      - Mux8~3       ; 0                 ; 6       ;
+;      - Mux0~5       ; 0                 ; 6       ;
+;      - Mux7~17      ; 0                 ; 6       ;
+; operation[3]        ;                   ;         ;
+;      - Mux7~2       ; 0                 ; 6       ;
+;      - Mux7~9       ; 0                 ; 6       ;
+;      - Mux6~0       ; 0                 ; 6       ;
+;      - Mux6~8       ; 0                 ; 6       ;
+;      - Mux6~9       ; 0                 ; 6       ;
+;      - Mux6~13      ; 0                 ; 6       ;
+;      - Mux0~4       ; 0                 ; 6       ;
+;      - Mux8~18      ; 0                 ; 6       ;
+; operation[1]        ;                   ;         ;
+;      - Mux7~2       ; 0                 ; 6       ;
+;      - Mux7~8       ; 0                 ; 6       ;
+;      - Mux6~0       ; 0                 ; 6       ;
+;      - Mux6~1       ; 0                 ; 6       ;
+;      - Mux6~2       ; 0                 ; 6       ;
+;      - Mux6~3       ; 0                 ; 6       ;
+;      - Mux6~4       ; 0                 ; 6       ;
+;      - Mux6~8       ; 0                 ; 6       ;
+;      - Mux6~9       ; 0                 ; 6       ;
+;      - Mux6~13      ; 0                 ; 6       ;
+;      - Mux5~0       ; 0                 ; 6       ;
+;      - Mux4~0       ; 0                 ; 6       ;
+;      - Mux3~0       ; 0                 ; 6       ;
+;      - Mux2~0       ; 0                 ; 6       ;
+;      - Mux1~0       ; 0                 ; 6       ;
+;      - Mux0~3       ; 0                 ; 6       ;
+;      - Mux8~0       ; 0                 ; 6       ;
+;      - Mux8~2       ; 0                 ; 6       ;
+;      - Mux8~3       ; 0                 ; 6       ;
+;      - Mux8~17      ; 0                 ; 6       ;
+; flagIn              ;                   ;         ;
+;      - Add4~0       ; 1                 ; 6       ;
+;      - Mux7~14      ; 1                 ; 6       ;
+;      - Mux7~15      ; 1                 ; 6       ;
+;      - Mux8~1       ; 1                 ; 6       ;
+;      - Mux8~2       ; 1                 ; 6       ;
++---------------------+-------------------+---------+
 
 
 +-------------------------------------------------+
@@ -1488,121 +1623,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 122 / 116,715 ( < 1 % ) ;
+; Block interconnects   ; 235 / 116,715 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 3,886 ( 0 % )       ;
-; C4 interconnects      ; 25 / 73,752 ( < 1 % )   ;
-; Direct links          ; 22 / 116,715 ( < 1 % )  ;
+; C4 interconnects      ; 92 / 73,752 ( < 1 % )   ;
+; Direct links          ; 26 / 116,715 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 45 / 39,600 ( < 1 % )   ;
-; R24 interconnects     ; 10 / 3,777 ( < 1 % )    ;
-; R4 interconnects      ; 66 / 99,858 ( < 1 % )   ;
+; Local interconnects   ; 71 / 39,600 ( < 1 % )   ;
+; R24 interconnects     ; 1 / 3,777 ( < 1 % )     ;
+; R4 interconnects      ; 111 / 99,858 ( < 1 % )  ;
 +-----------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 14.71) ; Number of LABs  (Total = 7) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
-; 14                                          ; 2                           ;
-; 15                                          ; 2                           ;
-; 16                                          ; 2                           ;
-+---------------------------------------------+-----------------------------+
-
-
 +----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 14.71) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 2                           ;
-; 15                                           ; 2                           ;
-; 16                                           ; 2                           ;
-+----------------------------------------------+-----------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 14.67) ; Number of LABs  (Total = 12) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 10                           ;
++---------------------------------------------+------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 8.43) ; Number of LABs  (Total = 7) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 1                           ;
-; 7                                               ; 2                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 1                           ;
-; 11                                              ; 1                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 1                           ;
-+-------------------------------------------------+-----------------------------+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 13.50) ; Number of LABs  (Total = 12) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 8                            ;
++----------------------------------------------+------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 14.57) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 2                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 1                           ;
-; 16                                           ; 1                           ;
-; 17                                           ; 1                           ;
-; 18                                           ; 0                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 7.75) ; Number of LABs  (Total = 12) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 4                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 17.58) ; Number of LABs  (Total = 12) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
++----------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -1666,14 +1803,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 30           ; 30           ; 30           ; 30           ; 30           ; 0         ; 30           ; 30           ; 0         ; 0         ; 30           ; 21           ; 30           ; 30           ; 9            ; 30           ; 21           ; 9            ; 30           ; 30           ; 30           ; 21           ; 30           ; 30           ; 30           ; 30           ; 30           ; 0         ; 30           ; 30           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; B[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[4]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[5]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[6]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[7]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1683,19 +1812,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; out[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[7]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; flag               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; operation[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; operation[3]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; operation[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[7]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[4]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[5]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[7]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[6]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[6]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[5]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[5]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[4]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[4]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; operation[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; operation[3]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; operation[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; flagIn             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; operation[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1778,32 +1915,32 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  64 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  67 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  66 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y22 to location X10_Y32
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X0_Y11 to location X10_Y21
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file C:/Users/SouICry/Desktop/cse141l/lab2/output_files/adder.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1205 megabytes
-    Info: Processing ended: Thu Nov 03 17:12:23 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 1203 megabytes
+    Info: Processing ended: Thu Nov 03 20:18:01 2016
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +----------------------------+

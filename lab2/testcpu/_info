@@ -10,26 +10,26 @@ cModel Technology
 Z0 dC:/Users/SouICry/Desktop/cse141l/lab2
 valu
 Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z2 DXx4 work 11 definitions 0 22 MXm@I2=U:2CJD1cD=MW2L3
-DXx4 work 11 alu_sv_unit 0 22 TBcI@WP_I1hHF8dL^V6^V3
+Z2 DXx4 work 11 definitions 0 22 4@X`RP1m<8AUcXk1L3UJ50
+DXx4 work 11 alu_sv_unit 0 22 U<^DzaZ[WU_BH9m42Lc@?3
 Z3 V`JN@9S9cnhjKRR_L]QIcM3
 r1
 !s85 0
 31
 !i10b 1
-!s100 `_5_GWkczXbhbf:gK1Fb<3
-IS@n6NC0ROMzTdc4jcma0:2
+!s100 mC81h>1kj6kk9SzgXU5Cn0
+IbzWQ8`fh63mSA_SbnP64f0
 Z4 !s105 alu_sv_unit
 S1
 R0
-Z5 w1478227156
-Z6 8C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
-Z7 FC:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
+Z5 w1478233378
+Z6 8C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv
+Z7 FC:/Users/SouICry/Desktop/cse141l/lab2/alu.sv
 L0 2
 Z8 OV;L;10.3d;59
-Z9 !s108 1478227378.221000
-Z10 !s107 C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
-Z11 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
+Z9 !s108 1478235546.017000
+Z10 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv|
+Z11 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv|
 !i113 1
 Z12 o-work testcpu -sv
 vALU
@@ -47,26 +47,26 @@ R4
 S1
 R0
 w1478206037
-R6
-R7
+8C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
+FC:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
 L0 2
 R8
 !s108 1478206147.082000
-R10
-R11
+!s107 C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
+!s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
 !i113 1
 R12
 n@a@l@u
 Xalu_sv_unit
 R1
 R2
-VTBcI@WP_I1hHF8dL^V6^V3
+VU<^DzaZ[WU_BH9m42Lc@?3
 r1
 !s85 0
 31
 !i10b 1
 !s100 Kl9L>n_X>:;i2XeBmWzWn0
-ITBcI@WP_I1hHF8dL^V6^V3
+IU<^DzaZ[WU_BH9m42Lc@?3
 !i103 1
 S1
 R0
@@ -82,7 +82,7 @@ R11
 R12
 vCPU
 R1
-Z13 !s110 1478227378
+Z13 !s110 1478235546
 !i10b 1
 !s100 :C9bzG5=;hGN`NTmHFGFT1
 IY^>lVjf0<U]_j8f0Hmnfl0
@@ -98,7 +98,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478227378.489000
+!s108 1478235546.191000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv|
 !i113 1
@@ -109,26 +109,26 @@ R1
 R13
 !i10b 1
 !s100 :Q?:FY_;djF:7l65PEn4i1
-IMXm@I2=U:2CJD1cD=MW2L3
-VMXm@I2=U:2CJD1cD=MW2L3
+I4@X`RP1m<8AUcXk1L3UJ50
+V4@X`RP1m<8AUcXk1L3UJ50
 S1
 R0
 w1478224469
-8C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv
-FC:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv
+8C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv
+FC:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv
 L0 2
 R8
 r1
 !s85 0
 31
-!s108 1478227378.728000
-!s107 C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv|
-!s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv|
+!s108 1478235546.444000
+!s107 C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv|
+!s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv|
 !i113 1
 R12
 vInstROM
 R1
-Z14 !s110 1478227379
+R13
 !i10b 1
 !s100 3KT5?goAYcjALoL>@2Mh_3
 I]hIJ:gjXndFVdU4l>=0V62
@@ -144,7 +144,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478227378.972000
+!s108 1478235546.695000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv|
 !i113 1
@@ -152,7 +152,7 @@ R12
 n@inst@r@o@m
 vpc
 R1
-R14
+R13
 !i10b 1
 !s100 M2hXmeFJCOCLcYe6<Ea303
 IP_gJeUlP5?K=QgM6Z9Poh2
@@ -168,14 +168,14 @@ R8
 r1
 !s85 0
 31
-!s108 1478227379.209000
+!s108 1478235546.939000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv|
 !i113 1
 R12
 vreg_file
 R1
-R14
+!s110 1478235547
 !i10b 1
 !s100 RjR]=b1QgRMNkK;90NF670
 IG7@EYzGa6lZQR:3<X7]3c1
@@ -191,7 +191,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478227379.478000
+!s108 1478235547.213000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv|
 !i113 1
@@ -199,47 +199,47 @@ R12
 vtest
 R1
 R2
-DXx4 work 12 test_sv_unit 0 22 ^aEZG3XlBamO3Z:ieR=hJ1
+DXx4 work 12 test_sv_unit 0 22 koZcN^YHolPjUebG<lU<>3
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 K^6WE[0^lhn9adR>_fR?62
-IcPY`Ei1lPS<QoXWX]ECRL0
+!s100 5n>0Kg06liFk1VMgd0kh13
+ILDgzP_UYC_MedNRG@;;l?0
 !s105 test_sv_unit
 S1
 R0
-Z15 w1478227371
-Z16 8C:/Users/SouICry/Desktop/cse141l/lab2/test.sv
-Z17 FC:/Users/SouICry/Desktop/cse141l/lab2/test.sv
+Z14 w1478235541
+Z15 8C:/Users/SouICry/Desktop/cse141l/lab2/test.sv
+Z16 FC:/Users/SouICry/Desktop/cse141l/lab2/test.sv
 L0 3
 R8
-Z18 !s108 1478227379.646000
-Z19 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
-Z20 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
+Z17 !s108 1478235547.498000
+Z18 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
+Z19 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
 !i113 1
 R12
 Xtest_sv_unit
 R1
 R2
-V^aEZG3XlBamO3Z:ieR=hJ1
+VkoZcN^YHolPjUebG<lU<>3
 r1
 !s85 0
 31
 !i10b 1
-!s100 ff6f1D3>f4Cg6ZXf[@3FI0
-I^aEZG3XlBamO3Z:ieR=hJ1
+!s100 Kko<Jh5^F`JAbX3g2NA`T2
+IkoZcN^YHolPjUebG<lU<>3
 !i103 1
 S1
 R0
+R14
 R15
 R16
-R17
 L0 2
 R8
+R17
 R18
 R19
-R20
 !i113 1
 R12

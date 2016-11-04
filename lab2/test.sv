@@ -7,12 +7,13 @@ module test;
 logic[3:0] op;
 logic[7:0] a,b, out;
 logic flag;
+logic flagIn;
 
 
 alu test(.operation(op),
 .A(a),
 .B(b),
-.flagIn(flag),
+.flagIn(flagIn),
 .out(out),
 .flag(flag)
 );
@@ -188,19 +189,19 @@ alu test(.operation(op),
 	b = 8'bX;
 	
 	a = 8'd6;
-	flag = 1'b1;
+	flagIn = 1'b1;
 	#1ns
 	a = 8'd6;
-	flag = 1'b0;
+	flagIn = 1'b0;
 	#1ns
 	a = -8'd6;
-	flag = 1'b1;
+	flagIn = 1'b1;
 	#1ns
 	a = 8'd127;
-	flag = 1'b1;
+	flagIn = 1'b1;
 	#1ns
 	a = 8'd255;
-	flag = 1'b1;
+	flagIn = 1'b1;
 	#1ns
 	
 	//Reset
@@ -242,6 +243,26 @@ alu test(.operation(op),
 	//End reset
 	
 	op = LSL1;
+	b = 8'bX;
+	
+	a = 8'b1111;
+	flagIn = 1;
+	#1ns
+	a = 8'b1111;
+	flagIn = 0;
+	#1ns
+	a = 8'b1000;
+	flagIn = 1;
+	#1ns
+	a = 8'b1000;
+	flagIn = 0;
+	#1ns
+	a = 8'b11110000;
+	flagIn = 1;
+	#1ns
+	a = 8'b11110000;
+	flagIn = 0;
+	#1ns
 	
 	//Reset
 	op = doNothing;
@@ -250,7 +271,58 @@ alu test(.operation(op),
 	flag = 8'bX;
 	#1ns
 	//End reset
-	op = LSL1;
+	
+	op = min;
+	
+	a = 8'd5;
+	b = 8'd12;
+	#1ns
+	a = 8'd15;
+	b = 8'd2;
+	#1ns
+	a = -8'd5;
+	b = 8'd12;
+	#1ns
+	a = 8'd127;
+	b = 8'd128;
+	#1ns
+	a = 8'd255;
+	b = 8'd0;
+	#1ns
+	
+	
+	//Reset
+	op = doNothing;
+	a = 8'bX;
+	b = 8'bX;
+	flag = 8'bX;
+	#1ns
+	//End reset
+	
+	//Reset
+	op = doNothing;
+	a = 8'bX;
+	b = 8'bX;
+	flag = 8'bX;
+	#1ns
+	//End reset
+	
+	//Reset
+	op = doNothing;
+	a = 8'bX;
+	b = 8'bX;
+	flag = 8'bX;
+	#1ns
+	//End reset
+	
+	//Reset
+	op = doNothing;
+	a = 8'bX;
+	b = 8'bX;
+	flag = 8'bX;
+	#1ns
+	//End reset
+	;
   end
 
 endmodule 

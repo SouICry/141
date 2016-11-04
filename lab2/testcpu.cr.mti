@@ -1,9 +1,25 @@
-C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv
+C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling package alu_sv_unit
+-- Importing package definitions
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module pc
 
 Top level modules:
 	pc
+
+} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
 
 } {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
@@ -12,12 +28,12 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	CPU
 
-} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv
+} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module InstROM
+-- Compiling package definitions
 
 Top level modules:
-	InstROM
+	--none--
 
 } {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014

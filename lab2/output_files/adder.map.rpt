@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Thu Nov 03 18:58:57 2016
+Thu Nov 03 20:17:32 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -18,6 +18,7 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,13 +45,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 03 18:58:57 2016       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 03 20:17:32 2016       ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 184                                         ;
-;     Total combinational functions  ; 184                                         ;
+; Total logic elements               ; 176                                         ;
+;     Total combinational functions  ; 176                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 30                                          ;
@@ -180,16 +181,16 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 184        ;
+; Estimated Total logic elements              ; 176        ;
 ;                                             ;            ;
-; Total combinational functions               ; 184        ;
+; Total combinational functions               ; 176        ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 81         ;
-;     -- 3 input functions                    ; 66         ;
+;     -- 3 input functions                    ; 58         ;
 ;     -- <=2 input functions                  ; 37         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 121        ;
+;     -- normal mode                          ; 113        ;
 ;     -- arithmetic mode                      ; 63         ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
@@ -201,9 +202,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; A[0]~input ;
-; Maximum fan-out                             ; 29         ;
-; Total fan-out                               ; 630        ;
-; Average fan-out                             ; 2.58       ;
+; Maximum fan-out                             ; 31         ;
+; Total fan-out                               ; 606        ;
+; Average fan-out                             ; 2.57       ;
 +---------------------------------------------+------------+
 
 
@@ -212,7 +213,7 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |alu                       ; 184 (184)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |alu                ; work         ;
+; |alu                       ; 176 (176)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |alu                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,8 +238,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |alu|ShiftLeft1            ;
-; 17:1               ; 6 bits    ; 66 LEs        ; 48 LEs               ; 18 LEs                 ; No         ; |alu|Mux6                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |alu|ShiftLeft0            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |alu|ShiftLeft0            ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 42 LEs               ; 12 LEs                 ; No         ; |alu|Mux6                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -248,19 +250,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 30                          ;
-; cycloneiii_lcell_comb ; 184                         ;
+; cycloneiii_lcell_comb ; 176                         ;
 ;     arith             ; 63                          ;
 ;         2 data inputs ; 19                          ;
 ;         3 data inputs ; 44                          ;
-;     normal            ; 121                         ;
+;     normal            ; 113                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 14                          ;
-;         3 data inputs ; 22                          ;
+;         3 data inputs ; 14                          ;
 ;         4 data inputs ; 81                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.70                        ;
-; Average LUT depth     ; 6.97                        ;
+; Average LUT depth     ; 7.08                        ;
 +-----------------------+-----------------------------+
 
 
@@ -269,7 +271,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -279,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Thu Nov 03 18:58:31 2016
+    Info: Processing started: Thu Nov 03 20:17:08 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
@@ -297,18 +299,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
 Info (12021): Found 1 design units, including 1 entities, in source file test.sv
     Info (12023): Found entity 1: test
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at alu.sv(31): truncated value with size 32 to match size of target (8)
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/SouICry/Desktop/cse141l/lab2/output_files/adder.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 214 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 184 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 692 megabytes
-    Info: Processing ended: Thu Nov 03 18:58:57 2016
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:49
+    Info (21061): Implemented 176 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 691 megabytes
+    Info: Processing ended: Thu Nov 03 20:17:32 2016
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:47
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/SouICry/Desktop/cse141l/lab2/output_files/adder.map.smsg.
 
 
