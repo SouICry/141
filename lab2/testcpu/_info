@@ -10,24 +10,24 @@ cModel Technology
 Z0 dC:/Users/SouICry/Desktop/cse141l/lab2
 valu
 Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z2 DXx4 work 11 definitions 0 22 J4DaQ<2VZT>ljmNB?dOT70
-DXx4 work 11 alu_sv_unit 0 22 FJlS5FD[;3PP4ekLV2?bI0
+Z2 DXx4 work 11 definitions 0 22 MXm@I2=U:2CJD1cD=MW2L3
+DXx4 work 11 alu_sv_unit 0 22 TBcI@WP_I1hHF8dL^V6^V3
 Z3 V`JN@9S9cnhjKRR_L]QIcM3
 r1
 !s85 0
 31
 !i10b 1
-!s100 Am`c?gTU0jL<_W4T85zFI1
-I2CX<znglb7g^BVC8e<J``3
+!s100 `_5_GWkczXbhbf:gK1Fb<3
+IS@n6NC0ROMzTdc4jcma0:2
 Z4 !s105 alu_sv_unit
 S1
 R0
-Z5 w1478208474
+Z5 w1478227156
 Z6 8C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
 Z7 FC:\Users\SouICry\Desktop\cse141l\lab2\alu.sv
 L0 2
 Z8 OV;L;10.3d;59
-Z9 !s108 1478208835.806000
+Z9 !s108 1478227378.221000
 Z10 !s107 C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
 Z11 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv|
 !i113 1
@@ -60,13 +60,13 @@ n@a@l@u
 Xalu_sv_unit
 R1
 R2
-VFJlS5FD[;3PP4ekLV2?bI0
+VTBcI@WP_I1hHF8dL^V6^V3
 r1
 !s85 0
 31
 !i10b 1
-!s100 DD4HdIOOL?WgmbZC`]6bC0
-IFJlS5FD[;3PP4ekLV2?bI0
+!s100 Kl9L>n_X>:;i2XeBmWzWn0
+ITBcI@WP_I1hHF8dL^V6^V3
 !i103 1
 S1
 R0
@@ -82,7 +82,7 @@ R11
 R12
 vCPU
 R1
-Z13 !s110 1478208835
+Z13 !s110 1478227378
 !i10b 1
 !s100 :C9bzG5=;hGN`NTmHFGFT1
 IY^>lVjf0<U]_j8f0Hmnfl0
@@ -98,7 +98,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478208835.892000
+!s108 1478227378.489000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/CPU.sv|
 !i113 1
@@ -108,12 +108,12 @@ Xdefinitions
 R1
 R13
 !i10b 1
-!s100 0A[PdBLMj72cW9DQnWFEB3
-IRLT[e5J1DjmD:jH2J8mQb3
-VRLT[e5J1DjmD:jH2J8mQb3
+!s100 :Q?:FY_;djF:7l65PEn4i1
+IMXm@I2=U:2CJD1cD=MW2L3
+VMXm@I2=U:2CJD1cD=MW2L3
 S1
 R0
-w1478208220
+w1478224469
 8C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv
 FC:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv
 L0 2
@@ -121,14 +121,14 @@ R8
 r1
 !s85 0
 31
-!s108 1478208835.983000
+!s108 1478227378.728000
 !s107 C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:\Users\SouICry\Desktop\cse141l\lab2\definitions.sv|
 !i113 1
 R12
 vInstROM
 R1
-Z14 !s110 1478208836
+Z14 !s110 1478227379
 !i10b 1
 !s100 3KT5?goAYcjALoL>@2Mh_3
 I]hIJ:gjXndFVdU4l>=0V62
@@ -144,7 +144,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478208836.066000
+!s108 1478227378.972000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv|
 !i113 1
@@ -168,7 +168,7 @@ R8
 r1
 !s85 0
 31
-!s108 1478208836.145000
+!s108 1478227379.209000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv|
 !i113 1
@@ -191,55 +191,55 @@ R8
 r1
 !s85 0
 31
-!s108 1478208836.229000
+!s108 1478227379.478000
 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv|
 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/reg_file.sv|
 !i113 1
 R12
 vtest
 R1
-Z15 DXx4 work 11 definitions 0 22 RLT[e5J1DjmD:jH2J8mQb3
-DXx4 work 12 test_sv_unit 0 22 >e]jhlEgl^OPl21Fl1jAM3
+R2
+DXx4 work 12 test_sv_unit 0 22 ^aEZG3XlBamO3Z:ieR=hJ1
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 cb<JilXVOInm91=<Zn_?l1
-IR]CAXZJRdBGcN_iBR4^eT2
+!s100 K^6WE[0^lhn9adR>_fR?62
+IcPY`Ei1lPS<QoXWX]ECRL0
 !s105 test_sv_unit
 S1
 R0
-Z16 w1478207065
-Z17 8C:/Users/SouICry/Desktop/cse141l/lab2/test.sv
-Z18 FC:/Users/SouICry/Desktop/cse141l/lab2/test.sv
+Z15 w1478227371
+Z16 8C:/Users/SouICry/Desktop/cse141l/lab2/test.sv
+Z17 FC:/Users/SouICry/Desktop/cse141l/lab2/test.sv
 L0 3
 R8
-Z19 !s108 1478208836.311000
-Z20 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
-Z21 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
+Z18 !s108 1478227379.646000
+Z19 !s107 C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
+Z20 !s90 -reportprogress|300|-work|testcpu|-sv|-stats=none|C:/Users/SouICry/Desktop/cse141l/lab2/test.sv|
 !i113 1
 R12
 Xtest_sv_unit
 R1
-R15
-V>e]jhlEgl^OPl21Fl1jAM3
+R2
+V^aEZG3XlBamO3Z:ieR=hJ1
 r1
 !s85 0
 31
 !i10b 1
-!s100 TF4EcNWNJfl;J0L]9R]>Q3
-I>e]jhlEgl^OPl21Fl1jAM3
+!s100 ff6f1D3>f4Cg6ZXf[@3FI0
+I^aEZG3XlBamO3Z:ieR=hJ1
 !i103 1
 S1
 R0
+R15
 R16
 R17
-R18
 L0 2
 R8
+R18
 R19
 R20
-R21
 !i113 1
 R12

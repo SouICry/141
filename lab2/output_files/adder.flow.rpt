@@ -1,5 +1,5 @@
 Flow report for adder
-Thu Nov 03 17:22:58 2016
+Thu Nov 03 18:58:57 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 03 17:22:58 2016       ;
+; Flow Status                        ; Successful - Thu Nov 03 18:58:57 2016       ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
 ; Revision Name                      ; adder                                       ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE30F29C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 183                                         ;
-;     Total combinational functions  ; 183                                         ;
+; Total logic elements               ; 184                                         ;
+;     Total combinational functions  ; 184                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 30                                          ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/03/2016 17:22:38 ;
+; Start date & time ; 11/03/2016 18:58:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; adder               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 128534983762725.147821895804768 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 128534983762725.147822471322364 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -95,8 +95,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 690 MB              ; 00:00:42                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 690 MB              ; 00:00:48                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:48                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
