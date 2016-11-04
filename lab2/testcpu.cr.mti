@@ -1,13 +1,4 @@
-C:/Users/SouICry/Desktop/cse141l/lab2/alu.sv {1 {vlog -work testcpu -sv -stats=none {C:\Users\SouICry\Desktop\cse141l\lab2\alu.sv}
-Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling package alu_sv_unit
--- Importing package definitions
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
-} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv
+C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/pc.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module pc
 
@@ -20,13 +11,6 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 
 Top level modules:
 	CPU
-
-} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/definitions.sv
-Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling package definitions
-
-Top level modules:
-	--none--
 
 } {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014

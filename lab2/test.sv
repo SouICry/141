@@ -9,9 +9,10 @@ logic[7:0] a,b, out;
 logic flag;
 
 
-ALU test(.operation(op),
+alu test(.operation(op),
 .A(a),
 .B(b),
+.flagIn(flag),
 .out(out),
 .flag(flag)
 );

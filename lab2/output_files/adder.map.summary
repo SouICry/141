@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 03 00:54:38 2016
+Analysis & Synthesis Status : Successful - Thu Nov 03 17:22:58 2016
 Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
 Revision Name : adder
-Top-level Entity Name : reg_file
+Top-level Entity Name : alu
 Family : Cyclone IV E
-Total logic elements : 155
-    Total combinational functions : 90
-    Dedicated logic registers : 65
-Total registers : 65
-Total pins : 37
+Total logic elements : 183
+    Total combinational functions : 183
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 30
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
