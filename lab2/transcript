@@ -1,0 +1,526 @@
+# reading /home/kevin/altera/15.0/modelsim_ase/linuxaloem/modelsim.ini
+# Loading project work-copy
+# Compile of adder.sv was successful.
+# Compile of alu.sv failed with 1 errors.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vlog -work /home/kevin/141/work2/work1 -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:35:55 on Nov 03,2016
+# vlog -reportprogress 300 -work /home/kevin/141/work2/work1 -refresh -force_refresh 
+# End time: 20:35:55 on Nov 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/kevin/141/work2/work1 -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:35:55 on Nov 03,2016
+# vcom -reportprogress 300 -work /home/kevin/141/work2/work1 -refresh -force_refresh 
+# End time: 20:35:55 on Nov 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlib work2copy
+vmap work2copy work2copy
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work2copy work2copy 
+# Modifying /home/kevin/141/lab2/work-copy.mpf
+# Load canceled
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:39:06 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(68)
+#    Time: 140 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 68
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:44:34 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# No ports found in reg_file_tb
+add wave -position insertpoint /reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:46:14 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(68)
+#    Time: 140 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 68
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:57:20 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# ** Error: (vsim-3037) /home/kevin/141/lab2/reg_file_tb.sv(46): Missing instance name in instantiation of 'reg_file'.
+#         Region: /reg_file_tb
+# Error loading design
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:57:24 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# ** Error: (vsim-3037) /home/kevin/141/lab2/reg_file_tb.sv(46): Missing instance name in instantiation of 'reg_file'.
+#         Region: /reg_file_tb
+# Error loading design
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:57:25 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# ** Error: (vsim-3037) /home/kevin/141/lab2/reg_file_tb.sv(46): Missing instance name in instantiation of 'reg_file'.
+#         Region: /reg_file_tb
+# Error loading design
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:57:59 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# ** Error: (vsim-3037) /home/kevin/141/lab2/reg_file_tb.sv(46): Missing instance name in instantiation of 'reg_file'.
+#         Region: /reg_file_tb
+# Error loading design
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:58:01 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# ** Error: (vsim-3037) /home/kevin/141/lab2/reg_file_tb.sv(46): Missing instance name in instantiation of 'reg_file'.
+#         Region: /reg_file_tb
+# Error loading design
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:58:18 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# ** Warning: (vsim-3017) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Too few port connections. Expected 10, found 8.
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'CLK' not found in the connected module (1st connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'RegWrite' not found in the connected module (2nd connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'srcA' not found in the connected module (3rd connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'srcB' not found in the connected module (4th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'writeReg' not found in the connected module (5th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'writeValue' not found in the connected module (6th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'ReadA' not found in the connected module (7th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'ReadB' not found in the connected module (8th connection).
+#         Region: /reg_file_tb/test
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'enableWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'dataIn'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'flag'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'regA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'regB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'flagBit'.
+# Error loading design
+vsim work.reg_file_tb
+# vsim 
+# Start time: 20:58:19 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# ** Warning: (vsim-3017) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Too few port connections. Expected 10, found 8.
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'CLK' not found in the connected module (1st connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'RegWrite' not found in the connected module (2nd connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'srcA' not found in the connected module (3rd connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'srcB' not found in the connected module (4th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'writeReg' not found in the connected module (5th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'writeValue' not found in the connected module (6th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'ReadA' not found in the connected module (7th connection).
+#         Region: /reg_file_tb/test
+# ** Error: (vsim-3063) /home/kevin/141/lab2/reg_file_tb.sv(37): Port 'ReadB' not found in the connected module (8th connection).
+#         Region: /reg_file_tb/test
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'enableWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'registerWrite'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'dataIn'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'flag'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'regA'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'regB'.
+# ** Warning: (vsim-3722) /home/kevin/141/lab2/reg_file_tb.sv(37): [TFMPC] - Missing connection for port 'flagBit'.
+# Error loading design
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:04:11 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# ** Warning: (vsim-3015) /home/kevin/141/lab2/reg_file_tb.sv(39): [PCDPC] - Port size (8) does not match connection size (1) for port 'regB'. The port definition is at: /home/kevin/141/lab2/reg_file.sv(26).
+#         Region: /reg_file_tb/test
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/flag
+add wave -position end  sim:/reg_file_tb/flagBit
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+add wave -position end  sim:/reg_file_tb/Read
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(77)
+#    Time: 140 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 77
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:09:52 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# ** Warning: (vsim-3015) /home/kevin/141/lab2/reg_file_tb.sv(39): [PCDPC] - Port size (8) does not match connection size (1) for port 'regB'. The port definition is at: /home/kevin/141/lab2/reg_file.sv(26).
+#         Region: /reg_file_tb/test
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/flag
+add wave -position end  sim:/reg_file_tb/flagBit
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+add wave -position end  sim:/reg_file_tb/Read
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(70)
+#    Time: 80 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 70
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:11:43 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# ** Warning: (vsim-3015) /home/kevin/141/lab2/reg_file_tb.sv(39): [PCDPC] - Port size (8) does not match connection size (1) for port 'regB'. The port definition is at: /home/kevin/141/lab2/reg_file.sv(26).
+#         Region: /reg_file_tb/test
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/flag
+add wave -position end  sim:/reg_file_tb/flagBit
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+add wave -position end  sim:/reg_file_tb/Read
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(70)
+#    Time: 80 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 70
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:15:28 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/flag
+add wave -position end  sim:/reg_file_tb/flagBit
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_tb.sv(76)
+#    Time: 120 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_tb.sv line 76
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of CPU.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of test.sv was successful.
+# Compile of reg_file_test.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.reg_file_tb
+# vsim 
+# Start time: 21:19:59 on Nov 03,2016
+# Loading sv_std.std
+# Loading work.reg_file_tb
+# Loading work.reg_file
+add wave -position end  sim:/reg_file_tb/CLK
+add wave -position end  sim:/reg_file_tb/RegWrite
+add wave -position end  sim:/reg_file_tb/flag
+add wave -position end  sim:/reg_file_tb/flagBit
+add wave -position end  sim:/reg_file_tb/srcA
+add wave -position end  sim:/reg_file_tb/srcB
+add wave -position end  sim:/reg_file_tb/writeReg
+add wave -position end  sim:/reg_file_tb/writeValue
+add wave -position end  sim:/reg_file_tb/ReadA
+add wave -position end  sim:/reg_file_tb/ReadB
+run
+# ** Note: $stop    : /home/kevin/141/lab2/reg_file_test.sv(76)
+#    Time: 120 ns  Iteration: 0  Instance: /reg_file_tb
+# Break in Module reg_file_tb at /home/kevin/141/lab2/reg_file_test.sv line 76
