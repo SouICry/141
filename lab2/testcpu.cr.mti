@@ -14,6 +14,15 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	pc
 
+} {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/test.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/test.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling package test_sv_unit
+-- Importing package definitions
+-- Compiling module test
+
+Top level modules:
+	test
+
 } {} {}} C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv {1 {vlog -work testcpu -sv -stats=none C:/Users/SouICry/Desktop/cse141l/lab2/InstROM.sv
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module InstROM
