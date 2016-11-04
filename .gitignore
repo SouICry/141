@@ -1,2 +1,4 @@
-*.flock
-*.wlf
+*
+!.gitignore
+!*.sv
+!*/
