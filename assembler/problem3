@@ -1,0 +1,21 @@
+LoadImmOneLSLMinusOne #6
+Copy r0 r3
+LoadImm #4
+Copy r0 r1
+LoadImmOneLSL #4
+AddTo r1
+LoadImmOneLSLMinusOne #7
+MemOffset
+Loop1:
+Copy r1, r2			
+Decrement r2
+Load r1
+Copy r0, r4
+Loop2:
+LoadAndAbsDiff r2, r4
+WriteMinTo r3
+DecrementAndBranchIfNotZero r2, Loop2
+DecrementAndSetIsOne r1
+BN loop1
+Copy r3, r0
+Store #0

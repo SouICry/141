@@ -1,0 +1,41 @@
+Clear r2 // adsfadsfadsfasdfadsfadsf
+Clear r3
+Clear r4
+LoadFromAddress #1 
+Copy r0 r5
+LoadFromAddress #2
+Copy r0 r6
+StorePCPlusTwo r7
+BN multiply
+Copy r2 r4
+Copy r3 r5
+Clear r2
+Clear r3
+LoadFromAddress #3
+Copy r0 r6
+StorePCPlusTwo r7
+BN multiply
+Copy r4 r0
+Store #4
+Copy r5 r0
+Store #5
+multiply:
+LoadImmOneLSL #3
+Copy r0 r1
+Loop:
+LeftShift1 r2
+LeftShift1 r3
+IncrementIfSet r2
+SetIsNegative r6
+BN Skip
+Copy R5 R0
+AddTo R3
+IncrementIfSet r2
+Copy r4 r0
+AddTo r2
+Skip:
+LeftShift1 R6
+Decrement r1
+BN loop
+End:
+Return r7

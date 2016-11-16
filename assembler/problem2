@@ -1,0 +1,15 @@
+LoadImmOneLSL #6
+Copy r0 r5
+LoadFromAddress #6
+Copy r0, r2
+Clear r3
+LoadImmOneLSLMinusOne #5
+MemOffset
+match:
+LoadAndSetStringMatchR2 r5
+IncrementIfSet r3
+DecrementAndBranchIfNotZero r5 match
+LoadImm #0
+MemOffset
+Copy r3 r0
+Store #7
