@@ -21,21 +21,25 @@ module reg_file (
                 registerB,
                 registerWrite,
   input  [ 7:0] dataIn,
-  input 			 flag,
   output [ 7:0] regA,
   output [ 7:0] regB,
-  output logic  flagBit
+  input 		    flagWrite;
+  input 			 flagIn,
+  output        flagOut
     );
 
 logic [7:0] registers[8];
+logic flagVal;
 
-assign regA = registerA? registers[registerA] : 8'b0;
-assign regB = registerB? registers[registerB] : 8'b0;
+assign regA = registers[registerA];
+assign regB = registers[registerB];
+assign flagOut = flagVal;
 
 // sequential (clocked) writes
 always_ff @ (posedge clock)
 	begin 
-		flagBit <= flag;
+		if (flagWrite)
+			flagVal <= flagIn;
 		if (enableWrite)
 			registers[registerWrite] <= dataIn;
 	end 
