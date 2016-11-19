@@ -1,7 +1,7 @@
-Clear r2 // adsfadsfadsfasdfadsfadsf
+Clear r2
 Clear r3
 Clear r4
-LoadFromAddress #1 
+LoadFromAddress #1
 Copy r0 r5
 LoadFromAddress #2
 Copy r0 r6
@@ -15,24 +15,24 @@ LoadFromAddress #3
 Copy r0 r6
 StorePCPlusTwo r7
 BN multiply
-Copy r4 r0
+Copy r4, r0
 Store #4
-Copy r5 r0
+Copy r5, r0
 Store #5
 multiply:
 LoadImmOneLSL #3
 Copy r0 r1
 Loop:
 LeftShift1 r2
-LeftShift1 r3
-IncrementIfSet r2
-SetIsNegative r6
+LeftShift1 r3 //Sets overflow if r3 left most bit was 1
+IncrementIfSet r2 //Add 1 to upper if overflow
+SetIsNegative r6 // If second number highest bit is 1
 BN Skip
-Copy R5 R0
-AddTo R3
-IncrementIfSet r2
+Copy R5 R0 // first number lower
+AddTo R3 // add first number lower 8 bits to lower 8 bits. Overflow bit is set if overflow
+IncrementIfSet r2 // if overflow, add 1 to upper
 Copy r4 r0
-AddTo r2
+AddTo r2 // Add first number upper to upper
 Skip:
 LeftShift1 R6
 Decrement r1

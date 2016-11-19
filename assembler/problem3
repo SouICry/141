@@ -1,21 +1,21 @@
 LoadImmOneLSLMinusOne #6
 Copy r0 r3
-LoadImm #4
-Copy r0 r1
-LoadImmOneLSL #4
-AddTo r1
-LoadImmOneLSLMinusOne #7
+LoadImm #4 // initialize i
+Copy r0 r1 // r1 = 4
+LoadImmOneLSL #4 // r0 = 16
+AddTo r1 // i = 20 = 16 + 4
+LoadImmOneLSLMinusOne #7 // MEM_OFFSET = 127 = 2 << 7 - 1
 MemOffset
 Loop1:
-Copy r1, r2			
+Copy r1 r2 // j = i-1
 Decrement r2
-Load r1
-Copy r0, r4
+Load r1 // a = array[i]
+Copy r0 r4
 Loop2:
-LoadAndAbsDiff r2, r4
-WriteMinTo r3
-DecrementAndBranchIfNotZero r2, Loop2
+LoadAndAbsDiff r2 r4 // b = array[j], r0 = abs(a-b)
+WriteMinTo r3 // min = min(r0, min)
+DecrementAndBranchIfNotZero r2 Loop2
 DecrementAndSetIsOne r1
-BN loop1
-Copy r3, r0
+BN loop1 // Store min into mem[127]
+Copy r3 r0
 Store #0
