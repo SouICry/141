@@ -15,7 +15,7 @@ logic signed [7:0] B_S;
   begin
   A_S = 8'bX;
   B_S = 8'bX;
-  out = 8'bX;
+  out = A;
   flag = flagIn;
   
   case(operation)

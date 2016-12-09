@@ -14,13 +14,16 @@ logic [6:0] offsetVal;
 	 
 initial
 	begin
-	//$readmemb("data.list", mem);
+		$readmemb("data.list", mem);
+		offsetVal = 7'd0;
 	end
 	 
 assign dataOut = mem[address + offsetVal];
+assign memOffset = offsetVal;
 
 always @ (posedge clock) begin
 	if(enableWrite) 
+		$display("mem[%d] = %d",address + offsetVal, dataIn);
 		mem[address + offsetVal] <= dataIn;
 	if (memOffsetWrite)
 		offsetVal <= memOffsetIn;

@@ -6,6 +6,9 @@ module flag(
 
 logic flagVal;
 
+initial 
+	flagVal = 1'd0;
+
 assign flagOut = flagVal;
 
 always_ff @(posedge clock)

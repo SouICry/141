@@ -27,6 +27,10 @@ module reg_file (
 
 logic [7:0] registers[8];
 
+initial begin
+registers = {0, 0, 0, 0, 0, 0, 0, 0};
+end
+
 assign regA = registers[registerA];
 assign regB = registers[registerB];
 

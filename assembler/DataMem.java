@@ -27,10 +27,16 @@ public class DataMem {
       Arrays.fill(outputList, 0);
       String line;
 
-      for(int i = 0; i < 3; i++) {
+      for(int i = 1; i <= 3; i++) {
         line = input1.readLine();
         outputList[i] = Integer.parseInt(line);
       }
+	  
+	  
+	line = input2.readLine();
+	outputList[6] = Integer.parseInt(line);
+	  
+	line = input2.readLine();
       for(int i = 32; i < 32 + 64; i++) {
         line = input2.readLine();
         outputList[i] = Integer.parseInt(line);

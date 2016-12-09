@@ -5,8 +5,10 @@ module InstROM(
 	 	 
 	 logic [8:0] mem [127:0];
 	 
-	 initial 
-        $readmemh("instructions.list", mem);
+	 initial
+	 begin 
+        $readmemb("inst.list", mem);
 		  
+	 end
 	 assign InstOut = mem[InstAddress];
 endmodule

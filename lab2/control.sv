@@ -8,7 +8,7 @@ module control(
 	output logic [2:0] srcA,
 	output logic [2:0] srcB,
    output logic regWrite,
-	output logic srcWrite,
+	output logic [2:0]srcWrite,
 	//DATA_MEM
 	output logic dataWrite,
 	//ALU
@@ -20,7 +20,6 @@ module control(
 	output logic [5:0] sixwireOffset,
 	
 	//MEM_OFFSET
-	input [6:0]  memOffset,
 	output logic memOffsetWrite,
 	
 	//CONTROL
@@ -33,8 +32,6 @@ module control(
 	
 always_comb	
 	begin
-	
-	
 	branchType = 2'b0;
 	threewireOffset = 3'b0;
 	sixwireOffset = 6'b0;
@@ -54,8 +51,6 @@ always_comb
 	aluA = 0;
 	aluB = 0;
 	dataMemAddress = 0;
-	
-	
 	  case(OPCODE)
 	  	 decrementAndBranchIfNotZero : begin
 			branchType = 2'b10;
@@ -78,7 +73,7 @@ always_comb
 			end
 	  	 BN : begin
 			branchType = 2'b11;
-			sixwireOffset = {B, A};//little endian
+			sixwireOffset = {A, B};//little endian
 			end
 	  	 copy : begin
 			srcA = A;

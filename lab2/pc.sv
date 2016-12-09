@@ -11,23 +11,27 @@ module pc (
   output logic[6:0] address);
 
   
-  always_ff @(posedge clk) 
+  always_ff @(posedge clk) begin
 	if(reset)
-		address <= startAddress;
+		address = startAddress;
 	else
 		case({branchType})
-		  'b00: address <= (address + 7'b0000001);
-		  'b01: address <= sevenBitAddress;
+		  'b00: address = (address + 7'b0000001);
+		  'b01: address = sevenBitAddress;
 		  'b10: 
 				if (!flag)
-					address <= address + 7'(signed'(threeBitOffset));
+					address = address + 7'(signed'(threeBitOffset));
 				else
-					address <= (address + 7'b0000001);
+					address = (address + 7'b0000001);
 		  'b11:
 				if (!flag)
-					address <= address + 7'(signed'(sixBitOffset)); 
+					address = address + 7'(signed'(sixBitOffset)); 
 				else
-					address <= (address + 7'b0000001);
+					address = (address + 7'b0000001);
 		endcase
+		
+		end
+		
+		
 
  endmodule

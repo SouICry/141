@@ -2,53 +2,68 @@ import definitions::*;
 module CPU(
 	input[6:0]    start,
 	input         clock,
+	input reset,
 	output        halt
 );
   
-  
-   //PC
-   wire reset;	//
-   wire [1:0] branchType;//-
-	//wire [6:0] sevenBitAddress; //
-   wire [2:0] threewireOffset;	//-
-   wire [5:0] sixwireOffset;	//-
+	  
+   logic [1:0] branchType;//-
+	//logic [6:0] sevenBitAddress; //
+   logic [2:0] threelogicOffset;	//-
+   logic [5:0] sixlogicOffset;	//-
 	
    //INST_MEM
-	wire [6:0] InstAddress;	//-
-	wire [8:0] InstOut;	//-
+	logic [6:0] InstAddress;	//-
+	logic [8:0] InstOut;	//-
 	
 	//FLAG
-	wire		  flagIn;	//-
-	wire		  flagOut;	//-
+	logic		  flagIn;	//-
+	logic		  flagOut;	//-
 	
    //CONTROL, or directly assigned to values
-	wire [7:0] intermediate; //The intermediate value, if any
-	wire [3:0] aluASrc; //The source which alu should get data for A
-	wire [3:0] aluBSrc; //The source which alu should get data for B
-	wire dataMemAddressSrc; //The data which data_mem should use as address
+	logic [7:0] intermediate; //The intermediate value, if any
+	logic [3:0] aluASrc; //The source which alu should get data for A
+	logic [3:0] aluBSrc; //The source which alu should get data for B
+	logic dataMemAddressSrc; //The data which data_mem should use as address
+
+	
 	
 	//REG
-	wire [2:0] srcA;	//-
-	wire [2:0] srcB;	//-
-	wire [7:0] regA;	//-
-   wire [7:0] regB;	//-
-   wire       regWrite;	//-
-   wire [2:0] srcWrite;	//-
+	logic [2:0] srcA;	//-
+	logic [2:0] srcB;	//-
+	logic [7:0] regA;	//-
+   logic [7:0] regB;	//-
+   logic       regWrite;	//-
+   logic [2:0] srcWrite;	//-
 	
 	//DATA_MEM
-   wire 		  dataWrite;	//-
+   logic 		  dataWrite;	//-
    logic [7:0] dataAddress;	//-
-	wire [7:0] dataOut;	//-
-	wire 		  memOffsetWrite;//-
+	logic [7:0] dataOut;	//-
+	logic 		  memOffsetWrite;//-
 	
 	//ALU
-	wire[3:0] aluOP;	//-
+	logic[3:0] aluOP;	//-
 	logic[7:0] aluA;	//-
 	logic[7:0] aluB;	//-
-	wire[7:0] aluOut;	//-
+	logic[7:0] aluOut;	//-
 
 	
 // Multiplexors for data sources	
+/*
+initial begin
+	InstAddress = 0;
+	reset = 0;
+	flagIn = 0;
+	flagOut = 0;
+	regA = 0;
+	regB = 0;
+	dataOut = 0;
+	dataAddress = 0;
+	aluB = 0;
+	aluOut = 0;
+end
+*/
 always_comb	begin
 
 	case(aluASrc)
@@ -98,21 +113,28 @@ end
 		.flagOut(flagOut)
 	);
 		
+		
+		
    control CONTROL(
-		.OPCODE(InstOut[2:0]),
+		.OPCODE(InstOut[8:6]),
 		.A(InstOut[5:3]),
-		.B(InstOut[8:6]),
+		.B(InstOut[2:0]),
 		.flag(flagOut),
 		.srcA(srcA),
 		.srcB(srcB),
+		.regWrite(regWrite),
 		.srcWrite(srcWrite),
 		.dataWrite(dataWrite),
 		.aluOp(aluOP),
+		.programCounter(InstAddress),
 		.branchType(branchType),
-		.threewireOffset(threewireOffset),
-		.sixwireOffset(sixwireOffset),
+		.threewireOffset(threelogicOffset),
+		.sixwireOffset(sixlogicOffset),
 		.memOffsetWrite(memOffsetWrite),
-		.programCounter(InstAddress)
+		.intermediate(intermediate),
+		.aluA(aluBSrc),
+		.aluB(aluASrc),
+		.dataMemAddress(dataMemAddressSrc)
 		
 	);
 	
@@ -122,10 +144,10 @@ end
 	  .reset(reset),
      .branchType(branchType),
      .startAddress(start),
-	  .sevenBitAddress(regA),//
+	  .sevenBitAddress(regA[6:0]),//
 	  //.sevenBitAddress(sevenBitAddress),
-     .threewireOffset(threewireOffset),
-     .sixwireOffset(sixwireOffset),
+     .threeBitOffset(threelogicOffset),
+     .sixBitOffset(sixlogicOffset),
      .address(InstAddress)
 	);
 	
@@ -152,7 +174,7 @@ end
      .dataIn(aluOut),//
 	  .dataOut(dataOut),
 	  .memOffsetWrite(memOffsetWrite),
-	  .memOffsetIn(regA)
+	  .memOffsetIn(regA[6:0])
 	);
 
 	alu ALU(
