@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Assembler {
     private static HashMap<String, Integer> hashmap = new HashMap<>();
+    private static String[] checkLabel = new String[128];
     private static int pc = 0; // program counter used to calculate branch labels
 
     public static void main(String args[]) {
@@ -24,11 +25,12 @@ public class Assembler {
             while((line = input.readLine()) != null) {
                 if(line.contains(":")) {
                     hashmap.put(line.substring(0, line.length()-1).toLowerCase(), pc);
+                    checkLabel[pc] = line.substring(0, line.length()-1).toLowerCase();
                 }
                 else {
                     code += line + "\n";
+                    pc++;
                 }
-                pc++;
             }
 
             pc = 0;
@@ -38,6 +40,7 @@ public class Assembler {
             System.out.println(instructions.length);
             for (int i = 0; i < instructions.length; i++) {
                 output.write(convert(instructions[i]) + "\n");
+                pc++;
             }
 
             output.close();
@@ -62,7 +65,7 @@ public class Assembler {
                 binString += "000";
                 reg1 = Integer.parseInt(inst[1].substring(1,2));
                 binString += toBinString(reg1, 3);
-                immediate = pc - hashmap.get(inst[2]);
+                immediate = hashmap.get(inst[2]) - pc;
                 offset = toBinString(immediate, 3);
                 binString += offset.substring(offset.length()-3, offset.length());
                 break;
@@ -75,7 +78,7 @@ public class Assembler {
                 break;
             case "bn" :
                 binString += "010";
-                immediate = pc - hashmap.get(inst[1]);
+                immediate = hashmap.get(inst[1]) - pc;
                 offset = toBinString(immediate, 6);
                 binString += offset.substring(offset.length()-6, offset.length());
                 break;
@@ -184,6 +187,10 @@ public class Assembler {
                 System.out.println("compile error: " + inst[0] + " instruction does not exit");
                 break;
         }
+        binString += " // ";
+        binString += (checkLabel[pc] != null) ? checkLabel[pc] + ": " : "";
+        binString += source;
+
         return binString;
     }
 
