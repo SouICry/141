@@ -55,7 +55,7 @@ alu test(.operation(op),
 	#1ns
 	//End reset
 	
-	op = LSR1;
+	op = aluLSR1;
 	b = 8'bX;
 	
 	a = 8'b11111111;	
@@ -153,7 +153,6 @@ alu test(.operation(op),
 	#1ns
 	a = 8'b11111010;
 	b = 8'b00101000;
-   #1ns $stop;
 	
 	//Reset
 	op = doNothing;

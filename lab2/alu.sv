@@ -26,7 +26,7 @@ logic signed [7:0] B_S;
 		B_S = B;
 		out = A_S > B_S ? A_S - B_S : B_S - A_S;
 	  end
-	  LSR1: out = A >> 1;
+	  aluLSR1: out = A >> 1;
 	  oneLSL: out = 8'd1 << A;
 	  oneLSLMinus1: out = (8'd1 << A) - 8'd1;
 	  strMatch: 
@@ -39,7 +39,7 @@ logic signed [7:0] B_S;
 				(A[3:0]^B[7:4]));
 		  end
 	  addu: {flag, out} = A + B;
-	  incrementIfSet: out = A + flagIn;
+	  aluIncrementIfSet: out = A + flagIn;
 	  setNegative: flag = A[7];
 	  LSL1: {flag,out} = (A << 1) + flagIn;
 	  min: out = A < B ? A : B;

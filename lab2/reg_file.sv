@@ -22,24 +22,17 @@ module reg_file (
                 registerWrite,
   input  [ 7:0] dataIn,
   output [ 7:0] regA,
-  output [ 7:0] regB,
-  input 		    flagWrite;
-  input 			 flagIn,
-  output        flagOut
-    );
+  output [ 7:0] regB
+  );
 
 logic [7:0] registers[8];
-logic flagVal;
 
 assign regA = registers[registerA];
 assign regB = registers[registerB];
-assign flagOut = flagVal;
 
 // sequential (clocked) writes
 always_ff @ (posedge clock)
 	begin 
-		if (flagWrite)
-			flagVal <= flagIn;
 		if (enableWrite)
 			registers[registerWrite] <= dataIn;
 	end 
