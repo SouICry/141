@@ -15,15 +15,14 @@
 011000110 // copy r0 r6
 111010111 // storepcplustwo r7
 010000101 // bn multiply
-011100000 // copy r4, r0
+011010000 // copy r2, r0
 101001100 // store #4
-011101000 // copy r5, r0
+011011000 // copy r3, r0
 101001101 // store #5
 101100011 // multiply: loadimmonelsl #3
 011000001 // copy r0 r1
-110110010 // loop: leftshift1 r2
-110110011 // leftshift1 r3 //sets overflow if r3 left most bit was 1
-110100010 // incrementifset r2 //add 1 to upper if overflow
+110110011 // loop: leftshift1 r3 
+110110010 // leftshift1 r2 //shifts in 1 if lower shifted out 1
 110101110 // setisnegative r6 // if second number highest bit is 1
 010000110 // bn skip
 011101000 // copy r5 r0 // first number lower
@@ -33,5 +32,5 @@
 110011010 // addto r2 // add first number upper to upper
 110110110 // skip: leftshift1 r6
 111001001 // decrement r1
-010110100 // bn loop
+010110101 // bn loop
 111011111 // end: return r7

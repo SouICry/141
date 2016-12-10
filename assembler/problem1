@@ -15,17 +15,16 @@ LoadFromAddress #3
 Copy r0 r6
 StorePCPlusTwo r7
 BN multiply
-Copy r4, r0
+Copy r2, r0
 Store #4
-Copy r5, r0
+Copy r3, r0
 Store #5
 multiply:
 LoadImmOneLSL #3
 Copy r0 r1
 Loop:
-LeftShift1 r2
-LeftShift1 r3 //Sets overflow if r3 left most bit was 1
-IncrementIfSet r2 //Add 1 to upper if overflow
+LeftShift1 r3 
+LeftShift1 r2 //shifts in 1 if lower shifted out 1
 SetIsNegative r6 // If second number highest bit is 1
 BN Skip
 Copy R5 R0 // first number lower
