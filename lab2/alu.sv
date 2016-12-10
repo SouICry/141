@@ -53,7 +53,11 @@ logic signed [7:0] B_S;
 			out = A - 8'd1;
 			flag = A == 8'd2;
 		  end
-	  adduTwo: out = A + 8'd2;
+	  adduTwo:
+		  begin
+		  out = A + 8'd2;
+		  flag = 0;
+		  end
 	  default:;
 	endcase
 	

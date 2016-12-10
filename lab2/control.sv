@@ -109,7 +109,7 @@ always_comb
 					dataWrite = 1;
 					srcA = 0;
 					intermediate = B;
-					dataMemAddress = intermediate;
+					dataMemAddress = intermediateData;
 					end
 				loadFromAddress : begin
 					regWrite = 1;
@@ -117,7 +117,7 @@ always_comb
 					aluOp = doNothing;
 					aluA = dataMemOut;
 					intermediate = B;
-					dataMemAddress = intermediate;
+					dataMemAddress = intermediateData;
 					end
 				loadImmOneLSL : begin
 					regWrite = 1;
@@ -155,7 +155,7 @@ always_comb
 					regWrite = 1;
 					srcWrite = B;
 					intermediate = 0;
-					aluA = intermediate;
+					aluA = intermediateOut;
 					end
 				addTo : begin
 					srcA = 0;
@@ -216,7 +216,7 @@ always_comb
 					regWrite = 1;
 					srcWrite = B;
 					aluOp = adduTwo;
-					aluA = intermediate;
+					aluA = intermediateOut;
 					intermediate = programCounter;
 					end
 				Return : begin

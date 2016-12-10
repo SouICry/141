@@ -22,9 +22,10 @@ assign dataOut = mem[address + offsetVal];
 assign memOffset = offsetVal;
 
 always @ (posedge clock) begin
-	if(enableWrite) 
+	if(enableWrite) begin
 		$display("mem[%d] = %d",address + offsetVal, dataIn);
 		mem[address + offsetVal] <= dataIn;
+	end
 	if (memOffsetWrite)
 		offsetVal <= memOffsetIn;
 		//$display("Memory write M[%d] = %d",DataAddress,DataIn);

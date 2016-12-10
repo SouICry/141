@@ -132,8 +132,8 @@ end
 		.sixwireOffset(sixlogicOffset),
 		.memOffsetWrite(memOffsetWrite),
 		.intermediate(intermediate),
-		.aluA(aluBSrc),
-		.aluB(aluASrc),
+		.aluA(aluASrc),
+		.aluB(aluBSrc),
 		.dataMemAddress(dataMemAddressSrc)
 		
 	);
