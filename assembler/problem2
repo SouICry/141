@@ -8,8 +8,10 @@ MemOffset
 match:
 LoadAndSetStringMatchR2 r5 // Load 8 bit string to r0 then parallel checks if r2 last 4 bit matches r0 string. Set flag bit to 1 if match, 0 otherwise
 IncrementIfSet r3 // Increment r3 if flag bit set
-DecrementAndBranchIfNotZero r5 match // outer loop while index > 0
+Decrement r5 // outer loop while index > 0
+BN match 
 LoadImm #0 //MEM_OFFSET = 0
 MemOffset
 Copy r3 r0 // Store it to mem[7]
 Store #7
+HALT

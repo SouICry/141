@@ -3,6 +3,7 @@ module pc (
   input	clk,
   input flag,
   input reset,
+  input halt,
   input [1:0] branchType,
   input [6:0] startAddress,
   input [6:0] sevenBitAddress,
@@ -14,6 +15,8 @@ module pc (
   always_ff @(posedge clk) begin
 	if(reset)
 		address = startAddress;
+	else if (halt)
+		address = address;
 	else
 		case({branchType})
 		  'b00: address = (address + 7'b0000001);

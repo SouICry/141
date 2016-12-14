@@ -10,6 +10,7 @@ module alu(
 );
 logic signed [7:0] A_S;
 logic signed [7:0] B_S;
+logic [7:0] t;
 	
   always_comb 
   begin
@@ -46,7 +47,7 @@ logic signed [7:0] B_S;
 	  decrementSetZero: 
 		  begin
 			out = A - 8'd1;
-			flag = (A == 8'd1);
+			flag = A == 8'd1;
 		  end
 	  decrementSetOne: 
 		  begin

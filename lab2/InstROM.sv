@@ -7,7 +7,9 @@ module InstROM(
 	 
 	 initial
 	 begin 
-        $readmemb("inst.list", mem);
+        $readmemb("instructionMem3.list", mem);
+        //$readmemb("instructionMem2.list", mem);
+        //$readmemb("instructionMem3.list", mem);
 		  
 	 end
 	 assign InstOut = mem[InstAddress];

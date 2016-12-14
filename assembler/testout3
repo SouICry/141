@@ -12,8 +12,9 @@
 011000100 // copy r0 r4
 001010100 // loop2: loadandabsdiff r2 r4 // b = array[j], r0 = abs(a-b)
 110111011 // writeminto r3 // min = min(r0, min)
-000010110 // decrementandbranchifnotzero r2 loop2
+111001010 // decrement r2 
+010111101 // bn loop2
 111000001 // decrementandsetisone r1
-010111000 // bn loop1 // store min into mem[127]
+010110111 // bn loop1 // store min into mem[127]
 011011000 // copy r3 r0
 101001000 // store #0

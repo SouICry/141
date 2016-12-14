@@ -3,7 +3,7 @@ module CPU(
 	input[6:0]    start,
 	input         clock,
 	input reset,
-	output        halt
+	output logic        halt
 );
   
 	  
@@ -26,7 +26,7 @@ module CPU(
 	logic [3:0] aluBSrc; //The source which alu should get data for B
 	logic dataMemAddressSrc; //The data which data_mem should use as address
 
-	
+	logic stop;
 	
 	//REG
 	logic [2:0] srcA;	//-
@@ -49,6 +49,7 @@ module CPU(
 	logic[7:0] aluOut;	//-
 
 	
+	
 // Multiplexors for data sources	
 /*
 initial begin
@@ -64,7 +65,10 @@ initial begin
 	aluOut = 0;
 end
 */
+
 always_comb	begin
+
+	halt <= stop;
 
 	case(aluASrc)
 		regAOut: begin
@@ -120,6 +124,7 @@ end
 		.A(InstOut[5:3]),
 		.B(InstOut[2:0]),
 		.flag(flagOut),
+		.halt(stop),
 		.srcA(srcA),
 		.srcB(srcB),
 		.regWrite(regWrite),
@@ -142,6 +147,7 @@ end
 	  .clk(clock),
 	  .flag(flagOut),
 	  .reset(reset),
+	  .halt(stop),
      .branchType(branchType),
      .startAddress(start),
 	  .sevenBitAddress(regA[6:0]),//

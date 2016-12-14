@@ -19,6 +19,7 @@ Copy r2, r0
 Store #4
 Copy r3, r0
 Store #5
+HALT
 multiply:
 LoadImmOneLSL #3
 Copy r0 r1

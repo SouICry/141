@@ -7,7 +7,8 @@
 100001000 // memoffset
 110001101 // match: loadandsetstringmatchr2 r5 // load 8 bit string to r0 then parallel checks if r2 last 4 bit matches r0 string. set flag bit to 1 if match, 0 otherwise
 110100011 // incrementifset r3 // increment r3 if flag bit set
-000101110 // decrementandbranchifnotzero r5 match // outer loop while index > 0
+111001101 // decrement r5 // outer loop while index > 0
+010111101 // bn match 
 101101000 // loadimm #0 //mem_offset = 0
 100001000 // memoffset
 011011000 // copy r3 r0 // store it to mem[7]

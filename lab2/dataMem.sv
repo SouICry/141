@@ -19,7 +19,6 @@ initial
 	end
 	 
 assign dataOut = mem[address + offsetVal];
-assign memOffset = offsetVal;
 
 always @ (posedge clock) begin
 	if(enableWrite) begin

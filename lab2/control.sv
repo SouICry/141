@@ -4,6 +4,7 @@ module control(
 	input [2:0] A,
 	input [2:0] B,
 	input flag,
+	output logic halt,
 	//REG
 	output logic [2:0] srcA,
 	output logic [2:0] srcB,
@@ -35,12 +36,11 @@ always_comb
 	branchType = 2'b0;
 	threewireOffset = 3'b0;
 	sixwireOffset = 6'b0;
-	
 	srcA = 2'b0;
 	srcB = 2'b0;
 	regWrite = 0;
 	srcWrite = 0;
-	
+	halt = 0;
 	dataWrite = 0;
 	
 	aluOp = doNothing;
@@ -51,6 +51,7 @@ always_comb
 	aluA = 0;
 	aluB = 0;
 	dataMemAddress = 0;
+	
 	  case(OPCODE)
 	  	 decrementAndBranchIfNotZero : begin
 			branchType = 2'b10;
@@ -93,6 +94,7 @@ always_comb
 					memOffsetWrite = 1;
 					end
 				HALT : begin
+				halt = 1;
 					end
 			endcase
 		 end
@@ -130,6 +132,8 @@ always_comb
 					regWrite = 1;
 					srcWrite = 0;
 					intermediate = B;
+					aluOp = doNothing;
+					aluA = intermediateOut;
 					end
 			endcase
 		 end

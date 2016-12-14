@@ -11,7 +11,7 @@ module test;
 	logic        halt;
 	logic        reset;
 CPU CPU(
-start, clock, reset, halt
+.start(start), .clock(clock), .reset(reset), .halt(halt)
 );
 
 		//$display("PC: %d", address);

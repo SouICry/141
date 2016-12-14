@@ -14,8 +14,10 @@ Copy r0 r4
 Loop2:
 LoadAndAbsDiff r2 r4 // b = array[j], r0 = abs(a-b)
 WriteMinTo r3 // min = min(r0, min)
-DecrementAndBranchIfNotZero r2 Loop2
+Decrement r2 
+BN Loop2
 DecrementAndSetIsOne r1
 BN loop1 // Store min into mem[127]
 Copy r3 r0
 Store #0
+HALT
